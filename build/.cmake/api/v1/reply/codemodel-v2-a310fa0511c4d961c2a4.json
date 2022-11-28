@@ -1,0 +1,612 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "3rd/freeglut",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-3rd.freeglut-Debug-96ae5c6c6f6754ebacaa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "3rd/freeglut",
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				},
+				{
+					"build" : "3rd/shapelib",
+					"jsonFile" : "directory-3rd.shapelib-Debug-c8ea09144fba1dad92d5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "3rd/shapelib",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "hw6 project",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "freeglut",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-78da7748190a22f007ab.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@692421d71f306a907f89",
+					"jsonFile" : "target-ALL_BUILD-Debug-9818aa6ef8939664be3b.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-3000872e4c74f7ad6360.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "freeglut_static::@692421d71f306a907f89",
+					"jsonFile" : "target-freeglut_static-Debug-65b905ffa14cda4fd6b9.json",
+					"name" : "freeglut_static",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw6_app::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw6_app-Debug-ef7a61eecea0018c0b7f.json",
+					"name" : "hw6_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw6_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw6_lib-Debug-89a550e0d44c21f3a8b4.json",
+					"name" : "hw6_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "shape_lib::@23a71218d581bd3088b0",
+					"jsonFile" : "target-shape_lib-Debug-c9b1830ce6bf54ba1c82.json",
+					"name" : "shape_lib",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "3rd/freeglut",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-3rd.freeglut-Release-439f71936c4305fbbfe1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "3rd/freeglut",
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				},
+				{
+					"build" : "3rd/shapelib",
+					"jsonFile" : "directory-3rd.shapelib-Release-c8ea09144fba1dad92d5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "3rd/shapelib",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "hw6 project",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "freeglut",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-78da7748190a22f007ab.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@692421d71f306a907f89",
+					"jsonFile" : "target-ALL_BUILD-Release-9818aa6ef8939664be3b.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-3000872e4c74f7ad6360.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "freeglut_static::@692421d71f306a907f89",
+					"jsonFile" : "target-freeglut_static-Release-6f38a49709ade88cd2f2.json",
+					"name" : "freeglut_static",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw6_app::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw6_app-Release-acd58412a78bbce608b8.json",
+					"name" : "hw6_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw6_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw6_lib-Release-0728a995296f3156e80b.json",
+					"name" : "hw6_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "shape_lib::@23a71218d581bd3088b0",
+					"jsonFile" : "target-shape_lib-Release-71aeb6c42698fc365273.json",
+					"name" : "shape_lib",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "3rd/freeglut",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-3rd.freeglut-MinSizeRel-a3ec735ba57bfa2cd33d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "3rd/freeglut",
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				},
+				{
+					"build" : "3rd/shapelib",
+					"jsonFile" : "directory-3rd.shapelib-MinSizeRel-c8ea09144fba1dad92d5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "3rd/shapelib",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "hw6 project",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "freeglut",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-78da7748190a22f007ab.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@692421d71f306a907f89",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-9818aa6ef8939664be3b.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-3000872e4c74f7ad6360.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "freeglut_static::@692421d71f306a907f89",
+					"jsonFile" : "target-freeglut_static-MinSizeRel-9be83b008af4f3fb7160.json",
+					"name" : "freeglut_static",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw6_app::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw6_app-MinSizeRel-d2e79ccc4be450720be9.json",
+					"name" : "hw6_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw6_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw6_lib-MinSizeRel-35ea6855f45ae617e60b.json",
+					"name" : "hw6_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "shape_lib::@23a71218d581bd3088b0",
+					"jsonFile" : "target-shape_lib-MinSizeRel-091d4b414f083b4f88bf.json",
+					"name" : "shape_lib",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "3rd/freeglut",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-3rd.freeglut-RelWithDebInfo-7093a77373b2a9c3262c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "3rd/freeglut",
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				},
+				{
+					"build" : "3rd/shapelib",
+					"jsonFile" : "directory-3rd.shapelib-RelWithDebInfo-c8ea09144fba1dad92d5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "3rd/shapelib",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "hw6 project",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "freeglut",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-78da7748190a22f007ab.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@692421d71f306a907f89",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-9818aa6ef8939664be3b.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-3000872e4c74f7ad6360.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "freeglut_static::@692421d71f306a907f89",
+					"jsonFile" : "target-freeglut_static-RelWithDebInfo-3a9383fbc28251cba91a.json",
+					"name" : "freeglut_static",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw6_app::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw6_app-RelWithDebInfo-45c2c23b60f6a468ce76.json",
+					"name" : "hw6_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw6_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw6_lib-RelWithDebInfo-342b98db19fa420248e8.json",
+					"name" : "hw6_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "shape_lib::@23a71218d581bd3088b0",
+					"jsonFile" : "target-shape_lib-RelWithDebInfo-f3e16338909dba26150d.json",
+					"name" : "shape_lib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build",
+		"source" : "C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/hw6"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,10 @@
+^C:\USERS\GENIUS\DESKTOP\22 FALL AND WINTER\SPATIAL DATA BASE\HW6\HW6\3RD\SHAPELIB\CMAKELISTS.TXT
+setlocal
+"E:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/hw6" "-BC:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build" --check-stamp-file "C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build/3rd/shapelib/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build/CMakeFiles/hw6_lib.dir
+C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build/CMakeFiles/hw6_app.dir
+C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build/CMakeFiles/INSTALL.dir
+C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build/3rd/freeglut/CMakeFiles/freeglut_static.dir
+C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build/3rd/freeglut/CMakeFiles/INSTALL.dir
+C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build/3rd/freeglut/CMakeFiles/ALL_BUILD.dir
+C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build/3rd/shapelib/CMakeFiles/shape_lib.dir
+C:/Users/Genius/Desktop/22 fall and winter/Spatial data base/hw6/build/3rd/shapelib/CMakeFiles/INSTALL.dir
