@@ -125,7 +125,7 @@ static void hw6::RTree<M>::analyse(); // 用于与四叉树进行比较，选择
 
    Point到Polygon的距离计算关键是判断Point是否在Polygon内部，可以通过射线法判断，参考https://www.cnblogs.com/luxiaoxun/p/3722358.html ，如果Point在Polygon内部，距离为0，否则计算Point与Polygon边界距离。Polygon定义与PostGIS相同，外环第一个点和最后一个点为同一个点。
 
-   ![1](src\1.gif)
+   ![1](https://github.com/Chenweigenius/Spatial_Index/blob/main/src/1.gif)
 
 2. 基于提供的Envelope类
 
@@ -139,7 +139,7 @@ static void hw6::RTree<M>::analyse(); // 用于与四叉树进行比较，选择
 
    空间索引是基于几何特征的包围盒创建，首先通过判断几何特征的包围盒是否和查询区域相交，降低复杂的几何特征空间关系计算的次数。contain含义和PostGIS中的contain不同，可以是相同的包围盒。
 
-   ![2](src\2.jpg)
+   ![2](https://github.com/Chenweigenius/Spatial_Index/blob/main/src/2.jpg)
 
 3. 基于提供的QuadNode和QuadTree类实现四叉树创建与查询
 
@@ -149,7 +149,7 @@ static void hw6::RTree<M>::analyse(); // 用于与四叉树进行比较，选择
 
       四叉树创建输入一组几何特征，将节点分裂为四个子节点，每个特征加到包围盒重叠的子节点中(即一个特征可能在多个节点中)，删除当前节点的几何特征记录(即所有特征只存储在叶节点中)，如果子节点的几何特征个数大于capacity，递归生成子节点。
 
-      ![3](src\3.jpg)
+      ![3](https://github.com/Chenweigenius/Spatial_Index/blob/main/src/3.jpg)
 
    2. 实现rangeQuery函数，完成区域查询
 
@@ -157,7 +157,7 @@ static void hw6::RTree<M>::analyse(); // 用于与四叉树进行比较，选择
 
       通过鼠标选择查询区域，在站点和道路数据上，验证区域查询。
 
-      ![4](src\4.jpg)
+      ![4](https://github.com/Chenweigenius/Spatial_Index/blob/main/src/4.jpg)
 
    3. 实现NNQuery和pointInLeafNode函数，完成最邻近几何特征查询
 
@@ -165,7 +165,7 @@ static void hw6::RTree<M>::analyse(); // 用于与四叉树进行比较，选择
 
       通过鼠标移动选择离鼠标最近的几何特征(站点和道路)，验证最邻近几何特征查询。
 
-      ![5](src\5.jpg)
+      ![5](https://github.com/Chenweigenius/Spatial_Index/blob/main/src/5.jpg)
 
    **扩展要求(至少完成一个)：**
 
