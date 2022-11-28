@@ -123,7 +123,7 @@ static void hw6::RTree<M>::analyse(); // 用于与四叉树进行比较，选择
 
    Point到LineString的距离计算分解为Point到每个线段的距离计算，即点P(x, y)到线段[P1(x1, y1), P2(y2, y2)]在二维笛卡尔空间的最短距离。基本思路是通过(P2 - P1)归一化向量和(P - P1)向量的内积，计算P在直线上的投影点，判断该投影点是否在线段上，如果在线段上，计算投影点到P的距离，不在线段上，计算P到线段端点距离的最小值。
 
-   Point到Polygon的距离计算关键是判断Point是否在Polygon内部，可以通过射线法判断，参考https://www.cnblogs.com/luxiaoxun/p/3722358.html，如果Point在Polygon内部，距离为0，否则计算Point与Polygon边界距离。Polygon定义与PostGIS相同，外环第一个点和最后一个点为同一个点。
+   Point到Polygon的距离计算关键是判断Point是否在Polygon内部，可以通过射线法判断，参考https://www.cnblogs.com/luxiaoxun/p/3722358.html ，如果Point在Polygon内部，距离为0，否则计算Point与Polygon边界距离。Polygon定义与PostGIS相同，外环第一个点和最后一个点为同一个点。
 
    ![1](src\1.gif)
 
