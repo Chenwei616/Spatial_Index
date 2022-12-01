@@ -5,13 +5,15 @@
 #include <iostream>
 #include <vector>
 
-namespace hw6 {
+namespace hw6
+{
 
-class Point;
-class LineString;
-class Polygon;
+  class Point;
+  class LineString;
+  class Polygon;
 
-class Envelope {
+  class Envelope
+  {
   private:
     double minX;
     double minY;
@@ -36,26 +38,29 @@ class Envelope {
 
     void draw() const;
 
-    void print() const {
-        std::cout << "Envelope( " << minX << " " << maxX << " " << minY << " "
-                  << maxY << ") ";
+    void print() const
+    {
+      std::cout << "Envelope( " << minX << " " << maxX << " " << minY << " "
+                << maxY << ") ";
     }
 
-    bool operator==(const Envelope &t1) const {
-        return (minX == t1.minX && minY == t1.minY && maxX == t1.maxX &&
-                maxY == t1.maxY);
+    bool operator==(const Envelope &t1) const
+    {
+      return (minX == t1.minX && minY == t1.minY && maxX == t1.maxX &&
+              maxY == t1.maxY);
     }
     bool operator!=(const Envelope &t1) const { return !(*this == t1); }
 
     bool contain(const Envelope &envelope) const;
     bool intersect(const Envelope &envelope) const;
     Envelope unionEnvelope(const Envelope &envelope) const;
-};
+  };
 
-/*
- * Geometry hierarchy
- */
-class Geometry {
+  /*
+   * Geometry hierarchy
+   */
+  class Geometry
+  {
   protected:
     Envelope envelope;
 
@@ -66,8 +71,9 @@ class Geometry {
     const Envelope &getEnvelope() const { return envelope; }
 
     virtual void constructEnvelope() = 0;
-    virtual double distance(const Geometry *geom) const {
-        return geom->distance(this);
+    virtual double distance(const Geometry *geom) const
+    {
+      return geom->distance(this);
     } // Euclidean distance
     virtual double distance(const Point *point) const = 0;
     virtual double distance(const LineString *line) const = 0;
@@ -75,9 +81,10 @@ class Geometry {
     virtual bool intersects(const Envelope &rect) const = 0;
     virtual void draw() const = 0;
     virtual void print() const = 0;
-};
+  };
 
-class Point : public Geometry {
+  class Point : public Geometry
+  {
   private:
     double x;
     double y;
@@ -102,12 +109,14 @@ class Point : public Geometry {
 
     virtual void draw() const;
 
-    virtual void print() const {
-        std::cout << "Point(" << x << " " << y << ")";
+    virtual void print() const
+    {
+      std::cout << "Point(" << x << " " << y << ")";
     }
-};
+  };
 
-class LineString : public Geometry {
+  class LineString : public Geometry
+  {
   private:
     std::vector<Point> points;
 
@@ -124,8 +133,9 @@ class LineString : public Geometry {
     virtual void constructEnvelope();
 
     // Euclidean distance
-    virtual double distance(const Point *point) const {
-        return point->distance(this);
+    virtual double distance(const Point *point) const
+    {
+      return point->distance(this);
     }
     virtual double distance(const LineString *line) const;
     virtual double distance(const Polygon *polygon) const;
@@ -136,27 +146,33 @@ class LineString : public Geometry {
     virtual void draw() const;
 
     virtual void print() const;
-};
+  };
 
-class Polygon : public Geometry {
+  class Polygon : public Geometry
+  {
   private:
     LineString exteriorRing;
+    LineString interiorRing;
 
   public:
     Polygon() {}
-    Polygon(LineString &ering) : exteriorRing(ering) { constructEnvelope(); }
+    // Polygon(LineString &ering) : exteriorRing(ering), hasInterior(false) { constructEnvelope(); }
+    Polygon(LineString &ering, LineString &iring = LineString()) : exteriorRing(ering), interiorRing(iring) { constructEnvelope(); }
     virtual ~Polygon() {}
 
     LineString getExteriorRing() const { return exteriorRing; }
+    LineString getInteriorRing() const { return interiorRing; }
 
     virtual void constructEnvelope() { envelope = exteriorRing.getEnvelope(); }
 
     // Euclidean distance
-    virtual double distance(const Point *point) const {
-        return point->distance(this);
+    virtual double distance(const Point *point) const
+    {
+      return point->distance(this);
     }
-    virtual double distance(const LineString *line) const {
-        return line->distance(this);
+    virtual double distance(const LineString *line) const
+    {
+      return line->distance(this);
     }
     virtual double distance(const Polygon *polygon) const;
 
@@ -166,7 +182,7 @@ class Polygon : public Geometry {
     virtual void draw() const;
 
     virtual void print() const;
-};
+  };
 
 } // namespace hw6
 

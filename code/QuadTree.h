@@ -4,10 +4,13 @@
 #include "Geometry.h"
 #include "Tree.h"
 #include <string>
+#include <ctime>
 
-namespace hw6 {
+namespace hw6
+{
 
-class QuadNode {
+  class QuadNode
+  {
   private:
     Envelope bbox;
     QuadNode *children[4];
@@ -15,15 +18,18 @@ class QuadNode {
 
   public:
     QuadNode() = delete;
-    QuadNode(const Envelope &box) : bbox(box) {
-        children[0] = children[1] = children[2] = children[3] = nullptr;
+    QuadNode(const Envelope &box) : bbox(box)
+    {
+      children[0] = children[1] = children[2] = children[3] = nullptr;
     }
 
-    ~QuadNode() {
-        for (int i = 0; i < 4; ++i) {
-            delete children[i];
-            children[i] = nullptr;
-        }
+    ~QuadNode()
+    {
+      for (int i = 0; i < 4; ++i)
+      {
+        delete children[i];
+        children[i] = nullptr;
+      }
     }
 
     bool isLeafNode() { return children[0] == nullptr; }
@@ -38,8 +44,9 @@ class QuadNode {
 
     void add(const Feature &f) { features.push_back(f); }
 
-    void add(const std::vector<Feature> &fs) {
-        features.insert(features.begin(), fs.begin(), fs.end());
+    void add(const std::vector<Feature> &fs)
+    {
+      features.insert(features.begin(), fs.begin(), fs.end());
     }
 
     void countNode(int &interiorNum, int &leafNum);
@@ -56,19 +63,21 @@ class QuadNode {
     void rangeQuery(const Envelope &rect, std::vector<Feature> &features);
 
     QuadNode *pointInLeafNode(double x, double y);
-};
+  };
 
-class QuadTree : public Tree {
+  class QuadTree : public Tree
+  {
   private:
     QuadNode *root;
 
   public:
     QuadTree() : Tree(5), root(nullptr) {}
     QuadTree(size_t cap) : Tree(cap), root(nullptr) {}
-    ~QuadTree() {
-        if (root != nullptr)
-            delete root;
-        root = nullptr;
+    ~QuadTree()
+    {
+      if (root != nullptr)
+        delete root;
+      root = nullptr;
     }
 
     virtual bool constructTree(const std::vector<Feature> &features) override;
@@ -83,8 +92,9 @@ class QuadTree : public Tree {
     virtual bool NNQuery(double x, double y,
                          std::vector<Feature> &features) override;
 
-    QuadNode *pointInLeafNode(double x, double y) {
-        return root->pointInLeafNode(x, y);
+    QuadNode *pointInLeafNode(double x, double y)
+    {
+      return root->pointInLeafNode(x, y);
     }
 
     virtual void draw() override;
@@ -93,7 +103,7 @@ class QuadTree : public Tree {
     static void test(int t);
 
     static void analyse();
-};
+  };
 
 } // namespace hw6
 

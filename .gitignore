@@ -5,10 +5,12 @@
 /cmake-build-debug
 
 # For windows
+/code/.vscode
 /.vscode
 /.vs
 
 # For all
+/code/build
 /build
 ~$6 空间数据应用.docx
 /code/CMakeIn.h
