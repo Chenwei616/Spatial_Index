@@ -93,18 +93,10 @@ namespace hw6
                 }
             }
             if ((x1 <= x0 && x0 <= x2) || (x2 <= x0 && x0 <= x1))
-                dist = sqrt((x - x0) * (x - x0) + (y - y0) * (y - y0));
+                dist = sqrt(pow((x - x0), 2) + pow((y - y0), 2));
             else
-            {
-                double dist1 = sqrt((x - x1) * (x - x1) + (y - y1) * (y - y1));
-                double dist2 = sqrt((x - x2) * (x - x2) + (y - y2) * (y - y2));
-                if (dist1 < dist2)
-                    dist = dist1;
-                else
-                    dist = dist2;
-            }
-            if (dist < mindist)
-                mindist = dist;
+                dist = std::min(sqrt(pow((x - x1), 2) + pow((y - y1), 2)), sqrt(pow((x - x2), 2) + pow((y - y2), 2)));
+            mindist = std::min(mindist, dist);
         }
         return mindist;
     }
@@ -209,10 +201,7 @@ namespace hw6
             {
                 double dist1 = this->distance(&exRing);
                 double dist2 = this->distance(&inRing);
-                if (dist1 < dist2)
-                    mindist = dist1;
-                else
-                    mindist = dist2;
+                mindist = std::min(dist1, dist2);
             }
             else
                 mindist = this->distance(&exRing);
