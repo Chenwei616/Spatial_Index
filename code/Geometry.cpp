@@ -16,19 +16,19 @@ bool Envelope::contain(double x, double y) const {
 bool Envelope::contain(const Envelope &envelope) const {
     // Task 测试Envelope是否包含关系
     // TODO
-    return false;
+    return envelope.minX >= minX && envelope.maxX <= maxX && envelope.minY >= minY && envelope.maxY <= maxY;
 }
 
 bool Envelope::intersect(const Envelope &envelope) const {
     // Task 测试Envelope是否相交
     // TODO
-    return false;
+    return maxX >= envelope.minX && minX <= envelope.maxX && maxY >= envelope.minY && minY <= envelope.maxY;
 }
 
 Envelope Envelope::unionEnvelope(const Envelope &envelope) const {
     // Task 合并两个Envelope生成一个新的Envelope
     // TODO
-    return Envelope();
+    return Envelope(std::min(minX, envelope.minX), std::max(maxX, envelope.maxX), std::min(minY, envelope.minY), std::max(maxY, envelope.maxY));
 }
 
 void Envelope::draw() const {
