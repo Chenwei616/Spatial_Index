@@ -52,13 +52,15 @@ vector<hw6::Feature> selectedFeatures;
 /*
  * shapefile文件中name和geometry属性读取
  */
-vector<string> readName(const char *filename) {
+vector<string> readName(const char *filename)
+{
     DBFHandle file = DBFOpen(filename, "r");
 
     vector<string> res;
     int cct = DBFGetRecordCount(file);
     res.reserve(cct);
-    for (int i = 0; i < cct; ++i) {
+    for (int i = 0; i < cct; ++i)
+    {
         string a = DBFReadStringAttribute(file, i, 0);
         res.push_back(a);
     }
@@ -68,7 +70,8 @@ vector<string> readName(const char *filename) {
     return res;
 }
 
-vector<hw6::Geometry *> readGeom(const char *filename) {
+vector<hw6::Geometry *> readGeom(const char *filename)
+{
     SHPHandle file = SHPOpen(filename, "r");
 
     int pnEntities, pnShapeType;
@@ -78,9 +81,11 @@ vector<hw6::Geometry *> readGeom(const char *filename) {
     vector<hw6::Point> points;
     vector<hw6::Geometry *> geoms;
     geoms.reserve(pnEntities);
-    switch (pnShapeType) {
+    switch (pnShapeType)
+    {
     case SHPT_POINT:
-        for (int i = 0; i < pnEntities; ++i) {
+        for (int i = 0; i < pnEntities; ++i)
+        {
             SHPObject *pt = SHPReadObject(file, i);
             geoms.push_back(new hw6::Point(pt->padfY[0], pt->padfX[0]));
             SHPDestroyObject(pt);
@@ -88,10 +93,12 @@ vector<hw6::Geometry *> readGeom(const char *filename) {
         break;
 
     case SHPT_ARC:
-        for (int i = 0; i < pnEntities; ++i) {
+        for (int i = 0; i < pnEntities; ++i)
+        {
             points.clear();
             SHPObject *pt = SHPReadObject(file, i);
-            for (int j = 0; j < pt->nVertices; ++j) {
+            for (int j = 0; j < pt->nVertices; ++j)
+            {
                 points.push_back(hw6::Point(pt->padfY[j], pt->padfX[j]));
             }
             SHPDestroyObject(pt);
@@ -100,10 +107,12 @@ vector<hw6::Geometry *> readGeom(const char *filename) {
         break;
 
     case SHPT_POLYGON:
-        for (int i = 0; i < pnEntities; ++i) {
+        for (int i = 0; i < pnEntities; ++i)
+        {
             points.clear();
             SHPObject *pt = SHPReadObject(file, i);
-            for (int j = 0; j < pt->nVertices; ++j) {
+            for (int j = 0; j < pt->nVertices; ++j)
+            {
                 points.push_back(hw6::Point(pt->padfY[j], pt->padfX[j]));
             }
             SHPDestroyObject(pt);
@@ -118,13 +127,15 @@ vector<hw6::Geometry *> readGeom(const char *filename) {
     return geoms;
 }
 
-void transformValue(double &res, const char *format = "%.2lf") {
+void transformValue(double &res, const char *format = "%.2lf")
+{
     char buf[20];
     sprintf(buf, format, res);
     sscanf(buf, "%lf", &res);
 }
 
-void wrongMessage(hw6::Envelope e1, hw6::Envelope e2, bool cal) {
+void wrongMessage(hw6::Envelope e1, hw6::Envelope e2, bool cal)
+{
     cout << "Your answer is " << cal << " for test between ";
     e1.print();
     cout << " and ";
@@ -133,7 +144,8 @@ void wrongMessage(hw6::Envelope e1, hw6::Envelope e2, bool cal) {
 }
 
 void wrongMessage(const hw6::Point &pt1, const hw6::Point &pt2, double dis,
-                  double res) {
+                  double res)
+{
     cout << "Your answer is " << dis << " for test ";
     pt1.print();
     cout << " and ";
@@ -142,7 +154,8 @@ void wrongMessage(const hw6::Point &pt1, const hw6::Point &pt2, double dis,
 }
 
 void wrongMessage(hw6::Envelope e1, hw6::Envelope e2, hw6::Envelope cal,
-                  hw6::Envelope res) {
+                  hw6::Envelope res)
+{
     cout << "Your answer is ";
     cal.print();
     cout << " for test between ";
@@ -157,10 +170,12 @@ void wrongMessage(hw6::Envelope e1, hw6::Envelope e2, hw6::Envelope cal,
 /*
  * 输出几何信息
  */
-void printGeom(vector<hw6::Geometry *> &geom) {
+void printGeom(vector<hw6::Geometry *> &geom)
+{
     cout << "Geometry:" << endl;
     for (vector<hw6::Geometry *>::iterator it = geom.begin(); it != geom.end();
-         ++it) {
+         ++it)
+    {
         (*it)->print();
     }
 }
@@ -168,9 +183,11 @@ void printGeom(vector<hw6::Geometry *> &geom) {
 /*
  * 删除几何信息
  */
-void deleteGeom(vector<hw6::Geometry *> &geom) {
+void deleteGeom(vector<hw6::Geometry *> &geom)
+{
     for (vector<hw6::Geometry *>::iterator it = geom.begin(); it != geom.end();
-         ++it) {
+         ++it)
+    {
         delete *it;
         *it = NULL;
     }
@@ -180,7 +197,8 @@ void deleteGeom(vector<hw6::Geometry *> &geom) {
 /*
  * 读取纽约道路数据
  */
-void loadRoadData() {
+void loadRoadData()
+{
     vector<hw6::Geometry *> geom = readGeom(PROJ_SRC_DIR "/data/highway");
 
     roads.clear();
@@ -195,7 +213,8 @@ void loadRoadData() {
 /*
  * 读取纽约自行车租赁点数据
  */
-void loadStationData() {
+void loadStationData()
+{
     vector<hw6::Geometry *> geom = readGeom(PROJ_SRC_DIR "/data/station");
     vector<string> name = readName(PROJ_SRC_DIR "/data/station");
 
@@ -211,7 +230,8 @@ void loadStationData() {
 /*
  * 读取纽约出租车打车点数据
  */
-void loadTaxiData() {
+void loadTaxiData()
+{
     vector<hw6::Geometry *> geom = readGeom(PROJ_SRC_DIR "/data/taxi");
     vector<string> name = readName(PROJ_SRC_DIR "/data/taxi");
 
@@ -227,7 +247,8 @@ void loadTaxiData() {
 /*
  * 区域查询
  */
-void rangeQuery() {
+void rangeQuery()
+{
     vector<hw6::Feature> candidateFeatures;
 
     // filter step (使用四叉树获得查询区域和几何特征包围盒相交的候选集）
@@ -243,7 +264,8 @@ void rangeQuery() {
 /*
  * 邻近查询
  */
-void NNQuery(hw6::Point p) {
+void NNQuery(hw6::Point p)
+{
     vector<hw6::Feature> candidateFeatures;
 
     // filter step (使用四叉树获得距离较近的几何特征候选集)
@@ -259,7 +281,8 @@ void NNQuery(hw6::Point p) {
 /*
  * 从屏幕坐标转换到地理坐标
  */
-void transfromPt(hw6::Point &pt) {
+void transfromPt(hw6::Point &pt)
+{
     const hw6::Envelope bbox = pointTree->getEnvelope();
     double width = bbox.getMaxX() - bbox.getMinX() + 0.002;
     double height = bbox.getMaxY() - bbox.getMinY() + 0.002;
@@ -277,7 +300,8 @@ void transfromPt(hw6::Point &pt) {
 /*
  * 绘制代码
  */
-void display() {
+void display()
+{
     // glClearColor(241 / 255.0, 238 / 255.0, 232 / 255.0, 0.0);
     glClearColor(1.0, 1.0, 1.0, 0.0);
     glClear(GL_COLOR_BUFFER_BIT);
@@ -290,14 +314,16 @@ void display() {
                bbox.getMinY() - 0.001, bbox.getMaxY() + 0.001);
 
     // 道路绘制
-    if (showRoad) {
+    if (showRoad)
+    {
         glColor3d(252 / 255.0, 214 / 255.0, 164 / 255.0);
         for (size_t i = 0; i < roads.size(); ++i)
             roads[i].draw();
     }
 
     // 点绘制
-    if (!(mode == RANGELINE || mode == NNLINE)) {
+    if (!(mode == RANGELINE || mode == NNLINE))
+    {
         glPointSize((float)pointSize);
         glColor3d(0.0, 146 / 255.0, 247 / 255.0);
         for (size_t i = 0; i < features.size(); ++i)
@@ -305,7 +331,8 @@ void display() {
     }
 
     // 四叉树绘制
-    if (showTree) {
+    if (showTree)
+    {
         glColor3d(0.0, 146 / 255.0, 247 / 255.0);
         if (mode == RANGELINE || mode == NNLINE)
             roadTree->draw();
@@ -314,14 +341,16 @@ void display() {
     }
 
     // 离鼠标最近点绘制
-    if (mode == NNPOINT) {
+    if (mode == NNPOINT)
+    {
         glPointSize(5.0);
         glColor3d(0.9, 0.0, 0.0);
         nearestFeature.draw();
     }
 
     // 离鼠标最近道路绘制
-    if (mode == NNLINE) {
+    if (mode == NNLINE)
+    {
         glLineWidth(3.0);
         glColor3d(0.9, 0.0, 0.0);
         nearestFeature.draw();
@@ -329,7 +358,8 @@ void display() {
     }
 
     // 区域选择绘制
-    if (mode == RANGEPOINT || mode == RANGELINE) {
+    if (mode == RANGEPOINT || mode == RANGELINE)
+    {
         glColor3d(0.0, 0.0, 0.0);
         selectedRect.draw();
         glColor3d(1.0, 0.0, 0.0);
@@ -344,14 +374,20 @@ void display() {
 /*
  * 鼠标和键盘交互
  */
-void mouse(int button, int state, int x, int y) {
-    if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
-        if (mode == RANGEPOINT || mode == RANGELINE) {
-            if (firstPoint) {
+void mouse(int button, int state, int x, int y)
+{
+    if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
+    {
+        if (mode == RANGEPOINT || mode == RANGELINE)
+        {
+            if (firstPoint)
+            {
                 selectedFeatures.clear();
                 corner[0] = hw6::Point(x, screenHeight - y);
                 transfromPt(corner[0]);
-            } else {
+            }
+            else
+            {
                 corner[1] = hw6::Point(x, screenHeight - y);
                 transfromPt(corner[1]);
                 selectedRect =
@@ -367,10 +403,12 @@ void mouse(int button, int state, int x, int y) {
     }
 }
 
-void passiveMotion(int x, int y) {
+void passiveMotion(int x, int y)
+{
     corner[1] = hw6::Point(x, screenHeight - y);
 
-    if ((mode == RANGEPOINT || mode == RANGELINE) && !firstPoint) {
+    if ((mode == RANGEPOINT || mode == RANGELINE) && !firstPoint)
+    {
         corner[1] = hw6::Point(x, screenHeight - y);
         transfromPt(corner[1]);
         selectedRect = hw6::Envelope(min(corner[0].getX(), corner[1].getX()),
@@ -380,7 +418,9 @@ void passiveMotion(int x, int y) {
         rangeQuery();
 
         glutPostRedisplay();
-    } else if (mode == NNPOINT || mode == NNLINE) {
+    }
+    else if (mode == NNPOINT || mode == NNLINE)
+    {
         hw6::Point p(x, screenHeight - y);
         transfromPt(p);
         NNQuery(p);
@@ -389,15 +429,18 @@ void passiveMotion(int x, int y) {
     }
 }
 
-void changeSize(int w, int h) {
+void changeSize(int w, int h)
+{
     screenWidth = w;
     screenHeight = h;
     glViewport(0, 0, w, h);
     glutPostRedisplay();
 }
 
-void processNormalKeys(unsigned char key, int x, int y) {
-    switch (key) {
+void processNormalKeys(unsigned char key, int x, int y)
+{
+    switch (key)
+    {
     case 27:
         exit(0);
         break;
@@ -456,7 +499,8 @@ void processNormalKeys(unsigned char key, int x, int y) {
     glutPostRedisplay();
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     cout << "Key Usage:\n"
          << "  S  : range search for roads\n"
          << "  s  : range search for stations\n"

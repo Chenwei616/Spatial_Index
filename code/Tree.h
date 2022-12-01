@@ -2,6 +2,7 @@
 #define TREE_H_INCLUDED
 
 #include "Geometry.h"
+#include <cmath>
 
 namespace hw6 {
 
