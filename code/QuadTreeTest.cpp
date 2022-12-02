@@ -380,6 +380,7 @@ namespace hw6
             cout << "²âÊÔ6: Polygon and Envelope Intersect" << endl;
 
             int failedCase = 0;
+
             vector<Point> points;
             points.push_back(Point(5, 0));
             points.push_back(Point(3, 6));
@@ -389,18 +390,46 @@ namespace hw6
             points.push_back(Point(-5, 0));
             points.push_back(Point(0, -3));
             points.push_back(Point(5, 0));
-            LineString line(points);
-            Polygon poly(line);
+            LineString ering(points);
+            points.clear();
+            points.push_back(Point(0, 3));
+            points.push_back(Point(2, -1));
+            points.push_back(Point(-2, -1));
+            points.push_back(Point(0, 3));
+            LineString iring1(points);
+            std::vector<LineString> iRings;
+            iRings.push_back(iring1);
+            points.clear();
+            points.push_back(Point(2, 0));
+            points.push_back(Point(3, 0));
+            points.push_back(Point(3, 1));
+            points.push_back(Point(2, 1));
+            points.push_back(Point(2, 0));
+            LineString iring2(points);
+            iRings.push_back(iring2);
+            Polygon poly(ering, iRings);
+
+            // vector<Point> points;
+            // points.push_back(Point(5, 0));
+            // points.push_back(Point(3, 6));
+            // points.push_back(Point(2, 4));
+            // points.push_back(Point(-2, 4));
+            // points.push_back(Point(-3, 5));
+            // points.push_back(Point(-5, 0));
+            // points.push_back(Point(0, -3));
+            // points.push_back(Point(5, 0));
+            // LineString line(points);
+            // Polygon poly(line);
 
             vector<Envelope> tests;
             tests.push_back(Envelope(-1, 1, -1, 1));
             tests.push_back(Envelope(-8, 8, -8, 8));
             tests.push_back(Envelope(-1, 8, -1, 8));
-            tests.push_back(Envelope(-2, 2, 4, 6));
+            tests.push_back(Envelope(0, 3, 0, 3));
             tests.push_back(Envelope(-2, 2, -4, -3));
             tests.push_back(Envelope(-2, 2, 5, 6));
-            tests.push_back(Envelope(-2, 2, -5, -4));
-            tests.push_back(Envelope(6, 7, 1, 2));
+            tests.push_back(Envelope(-1, 1, -0.5, 0.5));
+            tests.push_back(Envelope(2.1, 2.9, 0.1, 0.9));
             tests.push_back(Envelope(-6, -6, -4, -4));
             tests.push_back(Envelope(4, 4, 6, 6));
 
