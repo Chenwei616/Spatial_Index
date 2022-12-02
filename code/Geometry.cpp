@@ -103,68 +103,34 @@ namespace hw6
 
     double Point::distance(const Polygon *polygon) const
     {
-        LineString exRing = polygon->getExteriorRing(), inRing = polygon->getInteriorRing();
-        size_t exNum = exRing.numPoints(), inNum = inRing.numPoints();
+        LineString exRing = polygon->getExteriorRing();
+        std::vector<LineString> rings, inRings = polygon->getInteriorRings();
+        rings.push_back(exRing);
+        size_t exNum = exRing.numPoints();
         bool inPolygon = false;
+
+        for (auto iter = inRings.begin(); iter != inRings.end(); iter++)
+        {
+            LineString inRing = *iter;
+            if (inRing.numPoints())
+                rings.push_back(inRing);
+        }
         // Task whether Point P(x, y) is within Polygon (less than 15 lines)
         // TODO
         double x = this->getX(), y = this->getY();
         int leftcount = 0, rightcount = 0;
-        if (inNum)
-        {
-            if (this->distance(&exRing) == 0 || this->distance(&inRing) == 0)
-            {
-                inPolygon = true;
-                return 0;
-            }
-        }
-        else
-        {
-            if (this->distance(&exRing) == 0)
-            {
-                inPolygon = true;
-                return 0;
-            }
-        }
-        for (size_t i = 0; i < exNum - 1; i++)
-        {
-            double x1 = exRing.getPointN(i).getX();
-            double y1 = exRing.getPointN(i).getY();
-            double x2 = exRing.getPointN(i + 1).getX();
-            double y2 = exRing.getPointN(i + 1).getY();
-            if (y1 > y2)
-            {
-                std::swap(x1, x2);
-                std::swap(y1, y2);
-            }
-            if ((y1 <= y && y <= y2))
-            {
-                if (y2 == y && y != y1)
-                {
-                    if (x > x2)
-                        leftcount++;
-                    else
-                        rightcount++;
-                }
-                else if (y != y1)
-                {
-                    double projectX = x1 + (x2 - x1) * (y - y1) / (y2 - y1);
-                    if (projectX < x)
-                        leftcount++;
-                    else
-                        rightcount++;
-                }
-            }
-        }
 
-        if (inNum)
+        for (auto iter = rings.begin(); iter != rings.end(); iter++)
         {
-            for (size_t i = 0; i < inNum - 1; i++)
+            LineString ring = *iter;
+            if (this->distance(&ring) == 0)
+                return 0;
+            for (size_t i = 0; i < ring.numPoints() - 1; i++)
             {
-                double x1 = inRing.getPointN(i).getX();
-                double y1 = inRing.getPointN(i).getY();
-                double x2 = inRing.getPointN(i + 1).getX();
-                double y2 = inRing.getPointN(i + 1).getY();
+                double x1 = ring.getPointN(i).getX();
+                double y1 = ring.getPointN(i).getY();
+                double x2 = ring.getPointN(i + 1).getX();
+                double y2 = ring.getPointN(i + 1).getY();
                 if (y1 > y2)
                 {
                     std::swap(x1, x2);
@@ -197,17 +163,130 @@ namespace hw6
         double mindist = 0;
         if (!inPolygon)
         {
-            if (inNum)
+            bool flag = true;
+            for (auto iter = rings.begin(); iter != rings.end(); iter++)
             {
-                double dist1 = this->distance(&exRing);
-                double dist2 = this->distance(&inRing);
-                mindist = std::min(dist1, dist2);
+                LineString ring = *iter;
+                double dist = this->distance(&ring);
+                if (flag)
+                {
+                    mindist = dist;
+                    flag = false;
+                }
+                else if (dist < mindist)
+                    mindist = dist;
             }
-            else
-                mindist = this->distance(&exRing);
         }
         return mindist;
     }
+
+    // double Point::distance(const Polygon *polygon) const
+    // {
+    //     LineString exRing = polygon->getExteriorRing(), inRing = polygon->getInteriorRing();
+    //     size_t exNum = exRing.numPoints(), inNum = inRing.numPoints();
+    //     bool inPolygon = false;
+    //     // Task whether Point P(x, y) is within Polygon (less than 15 lines)
+    //     // TODO
+    //     double x = this->getX(), y = this->getY();
+    //     int leftcount = 0, rightcount = 0;
+    //     if (inNum)
+    //     {
+    //         if (this->distance(&exRing) == 0 || this->distance(&inRing) == 0)
+    //         {
+    //             inPolygon = true;
+    //             return 0;
+    //         }
+    //     }
+    //     else
+    //     {
+    //         if (this->distance(&exRing) == 0)
+    //         {
+    //             inPolygon = true;
+    //             return 0;
+    //         }
+    //     }
+    //     for (size_t i = 0; i < exNum - 1; i++)
+    //     {
+    //         double x1 = exRing.getPointN(i).getX();
+    //         double y1 = exRing.getPointN(i).getY();
+    //         double x2 = exRing.getPointN(i + 1).getX();
+    //         double y2 = exRing.getPointN(i + 1).getY();
+    //         if (y1 > y2)
+    //         {
+    //             std::swap(x1, x2);
+    //             std::swap(y1, y2);
+    //         }
+    //         if ((y1 <= y && y <= y2))
+    //         {
+    //             if (y2 == y && y != y1)
+    //             {
+    //                 if (x > x2)
+    //                     leftcount++;
+    //                 else
+    //                     rightcount++;
+    //             }
+    //             else if (y != y1)
+    //             {
+    //                 double projectX = x1 + (x2 - x1) * (y - y1) / (y2 - y1);
+    //                 if (projectX < x)
+    //                     leftcount++;
+    //                 else
+    //                     rightcount++;
+    //             }
+    //         }
+    //     }
+
+    //     if (inNum)
+    //     {
+    //         for (size_t i = 0; i < inNum - 1; i++)
+    //         {
+    //             double x1 = inRing.getPointN(i).getX();
+    //             double y1 = inRing.getPointN(i).getY();
+    //             double x2 = inRing.getPointN(i + 1).getX();
+    //             double y2 = inRing.getPointN(i + 1).getY();
+    //             if (y1 > y2)
+    //             {
+    //                 std::swap(x1, x2);
+    //                 std::swap(y1, y2);
+    //             }
+    //             if ((y1 <= y && y <= y2))
+    //             {
+    //                 if (y2 == y && y != y1)
+    //                 {
+    //                     if (x > x2)
+    //                         leftcount++;
+    //                     else
+    //                         rightcount++;
+    //                 }
+    //                 else if (y != y1)
+    //                 {
+    //                     double projectX = x1 + (x2 - x1) * (y - y1) / (y2 - y1);
+    //                     if (projectX < x)
+    //                         leftcount++;
+    //                     else
+    //                         rightcount++;
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    //     if ((leftcount % 2) && (rightcount % 2))
+    //         inPolygon = true;
+
+    //     double mindist = 0;
+    //     if (!inPolygon)
+    //     {
+    //         if (inNum)
+    //         {
+    //             double dist1 = this->distance(&exRing);
+    //             double dist2 = this->distance(&inRing);
+    //             mindist = std::min(dist1, dist2);
+    //         }
+    //         else
+    //             mindist = this->distance(&exRing);
+    //     }
+    //     return mindist;
+    // }
 
     // 仅有外环的距离判断
     // double Point::distance(const Polygon *polygon) const
@@ -487,18 +566,24 @@ namespace hw6
             std::cout << p.getX() << " " << p.getY();
         }
         std::cout << ")";
-        if (interiorRing.numPoints())
+
+        for (auto iter = interiorRings.begin(); iter != interiorRings.end(); iter++)
         {
-            std::cout << ", (";
-            for (size_t i = 0; i < interiorRing.numPoints(); ++i)
+            LineString ring = *iter;
+            if (ring.numPoints())
             {
-                if (i != 0)
-                    std::cout << ", ";
-                Point p = interiorRing.getPointN(i);
-                std::cout << p.getX() << " " << p.getY();
+                std::cout << ", (";
+                for (size_t i = 0; i < ring.numPoints(); ++i)
+                {
+                    if (i != 0)
+                        std::cout << ", ";
+                    Point p = ring.getPointN(i);
+                    std::cout << p.getX() << " " << p.getY();
+                }
+                std::cout << ")";
             }
-            std::cout << ")";
         }
+
         std::cout << ")";
     }
 

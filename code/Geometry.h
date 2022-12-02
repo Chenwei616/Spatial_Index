@@ -152,16 +152,16 @@ namespace hw6
   {
   private:
     LineString exteriorRing;
-    LineString interiorRing;
+    std::vector<LineString> interiorRings;
 
   public:
     Polygon() {}
     // Polygon(LineString &ering) : exteriorRing(ering), hasInterior(false) { constructEnvelope(); }
-    Polygon(LineString &ering, LineString &iring = LineString()) : exteriorRing(ering), interiorRing(iring) { constructEnvelope(); }
+    Polygon(LineString &ering, std::vector<LineString> &iring = std::vector<LineString>()) : exteriorRing(ering), interiorRings(iring) { constructEnvelope(); }
     virtual ~Polygon() {}
 
     LineString getExteriorRing() const { return exteriorRing; }
-    LineString getInteriorRing() const { return interiorRing; }
+    std::vector<LineString> getInteriorRings() const { return interiorRings; }
 
     virtual void constructEnvelope() { envelope = exteriorRing.getEnvelope(); }
 
