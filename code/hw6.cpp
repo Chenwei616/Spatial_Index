@@ -167,6 +167,15 @@ void wrongMessage(hw6::Envelope e1, hw6::Envelope e2, hw6::Envelope cal,
     cout << endl;
 }
 
+void wrongMessage(const hw6::Polygon &p, hw6::Envelope e, bool cal)
+{
+    cout << "Your answer is " << cal << " for test between ";
+    p.print();
+    cout << " and ";
+    e.print();
+    cout << ", but the answer is " << !cal << endl;
+}
+
 /*
  * 输出几何信息
  */

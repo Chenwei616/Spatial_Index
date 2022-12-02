@@ -470,7 +470,12 @@ namespace hw6
     bool Polygon::intersects(const Envelope &rect) const
     {
         // TODO
-        return true;
+        bool flag_overlap = false, flag_contain = false, flag_equal = false, flag_within = false;
+
+        // if(this->getExteriorRing().intersects(rect))
+        //     flag_overlap = true;
+        return this->getExteriorRing().intersects(rect);
+        // return flag_overlap || flag_contain || flag_equal || flag_within;
     }
 
     void Polygon::draw() const { exteriorRing.draw(); }
