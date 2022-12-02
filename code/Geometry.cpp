@@ -68,8 +68,7 @@ namespace hw6
             double y1 = line->getPointN(i).getY();
             double x2 = line->getPointN(i + 1).getX();
             double y2 = line->getPointN(i + 1).getY();
-            // Task calculate the distance between Point P(x, y) and Line [P1(x1,
-            // y1), P2(x2, y2)] (less than 10 lines)
+            // Task calculate the distance between Point P(x, y) and Line [P1(x1, y1), P2(x2, y2)] (less than 10 lines)
             // TODO
             double x = this->getX(), y = this->getY(), x0, y0;
 
@@ -126,18 +125,14 @@ namespace hw6
 
     double Point::distance(const Polygon *polygon) const
     {
-        LineString exRing = polygon->getExteriorRing();
         std::vector<LineString> rings, inRings = polygon->getInteriorRings();
-        rings.push_back(exRing);
-        size_t exNum = exRing.numPoints();
-        bool inPolygon = false;
+        size_t exNum = polygon->getExteriorRing().numPoints();
+        double mindist = 0;
 
+        rings.push_back(polygon->getExteriorRing());
         for (auto iter = inRings.begin(); iter != inRings.end(); iter++)
-        {
-            LineString inRing = *iter;
-            if (inRing.numPoints())
-                rings.push_back(inRing);
-        }
+            if ((*iter).numPoints())
+                rings.push_back(*iter);
         // Task whether Point P(x, y) is within Polygon (less than 15 lines)
         // TODO
         double x = this->getX(), y = this->getY();
@@ -145,15 +140,14 @@ namespace hw6
 
         for (auto iter = rings.begin(); iter != rings.end(); iter++)
         {
-            LineString ring = *iter;
-            if (this->distance(&ring) == 0)
+            if (this->distance(&(*iter)) == 0)
                 return 0;
-            for (size_t i = 0; i < ring.numPoints() - 1; i++)
+            for (size_t i = 0; i < (*iter).numPoints() - 1; i++)
             {
-                double x1 = ring.getPointN(i).getX();
-                double y1 = ring.getPointN(i).getY();
-                double x2 = ring.getPointN(i + 1).getX();
-                double y2 = ring.getPointN(i + 1).getY();
+                double x1 = (*iter).getPointN(i).getX();
+                double y1 = (*iter).getPointN(i).getY();
+                double x2 = (*iter).getPointN(i + 1).getX();
+                double y2 = (*iter).getPointN(i + 1).getY();
                 if (y1 > y2)
                 {
                     std::swap(x1, x2);
@@ -180,22 +174,13 @@ namespace hw6
             }
         }
 
-        if ((leftcount % 2) && (rightcount % 2))
-            inPolygon = true;
-
-        double mindist = 0;
-        if (!inPolygon)
+        if (!((leftcount % 2) && (rightcount % 2)))
         {
-            bool flag = true;
             for (auto iter = rings.begin(); iter != rings.end(); iter++)
             {
-                LineString ring = *iter;
-                double dist = this->distance(&ring);
-                if (flag)
-                {
+                double dist = this->distance(&(*iter));
+                if (iter == rings.begin())
                     mindist = dist;
-                    flag = false;
-                }
                 else if (dist < mindist)
                     mindist = dist;
             }
@@ -572,7 +557,66 @@ namespace hw6
     bool Polygon::intersects(const Envelope &rect) const
     {
         // TODO
-        return true;
+        bool flag_ExteriorRing = false, flag_InteriorRings = false, flag_Contains = false;
+        std::vector<LineString> rings;
+        rings.push_back(this->getExteriorRing());
+
+        if (this->getExteriorRing().intersects(rect))
+            flag_ExteriorRing = true;
+        for (auto iter = this->interiorRings.begin(); iter != this->interiorRings.end(); iter++)
+        {
+            if ((*iter).intersects(rect))
+                flag_InteriorRings = true;
+            if ((*iter).numPoints())
+                rings.push_back(*iter);
+        }
+
+        std::vector<std::vector<double>> envelope_Vertices = {{rect.getMaxX(), rect.getMaxY()},
+                                                              {rect.getMaxX(), rect.getMinY()},
+                                                              {rect.getMinX(), rect.getMaxY()},
+                                                              {rect.getMinX(), rect.getMinY()}};
+
+        for (auto iter = envelope_Vertices.begin(); iter != envelope_Vertices.end(); iter++)
+        {
+            double x = (*iter)[0], y = (*iter)[1];
+            int leftcount = 0, rightcount = 0;
+
+            for (auto iter = rings.begin(); iter != rings.end(); iter++)
+                for (size_t i = 0; i < (*iter).numPoints() - 1; i++)
+                {
+                    double x1 = (*iter).getPointN(i).getX();
+                    double y1 = (*iter).getPointN(i).getY();
+                    double x2 = (*iter).getPointN(i + 1).getX();
+                    double y2 = (*iter).getPointN(i + 1).getY();
+                    if (y1 > y2)
+                    {
+                        std::swap(x1, x2);
+                        std::swap(y1, y2);
+                    }
+                    if ((y1 <= y && y <= y2))
+                    {
+                        if (y2 == y && y != y1)
+                        {
+                            if (x > x2)
+                                leftcount++;
+                            else
+                                rightcount++;
+                        }
+                        else if (y != y1)
+                        {
+                            double projectX = x1 + (x2 - x1) * (y - y1) / (y2 - y1);
+                            if (projectX < x)
+                                leftcount++;
+                            else
+                                rightcount++;
+                        }
+                    }
+                }
+            if ((leftcount % 2) && (rightcount % 2))
+                flag_Contains = true;
+        }
+
+        return flag_ExteriorRing || flag_InteriorRings || flag_Contains;
     }
 
     void Polygon::draw() const { exteriorRing.draw(); }

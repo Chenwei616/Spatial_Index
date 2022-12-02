@@ -13,6 +13,7 @@ extern void wrongMessage(Envelope e1, Envelope e2, bool cal);
 extern void wrongMessage(const Point &pt1, const Point &pt2, double dis,
                          double res);
 extern void wrongMessage(Envelope e1, Envelope e2, Envelope cal, Envelope res);
+extern void wrongMessage(const hw6::Polygon &p, hw6::Envelope e, bool cal);
 
 namespace hw6
 {
@@ -118,12 +119,12 @@ namespace hw6
                 if (e1.intersect(tests[i]) != (i < 6))
                 {
                     failedCase += 1;
-                    wrongMessage(e1, tests[i], (i < 6));
+                    wrongMessage(e1, tests[i], !(i < 6));
                 }
                 if (tests[i].intersect(e1) != (i < 6))
                 {
                     failedCase += 1;
-                    wrongMessage(tests[i], e1, (i < 6));
+                    wrongMessage(tests[i], e1, !(i < 6));
                 }
             }
             cout << "Envelope Intersect: " << tests.size() * 2 - failedCase << " / "
@@ -373,6 +374,75 @@ namespace hw6
             cout << "Distance between Point and Polygon: "
                  << points.size() - failedCase << " / " << points.size()
                  << " tests are passed" << endl;
+        }
+        else if (t == TEST6)
+        {
+            cout << "²âÊÔ6: Polygon and Envelope Intersect" << endl;
+
+            int failedCase = 0;
+
+            vector<Point> points;
+            points.push_back(Point(5, 0));
+            points.push_back(Point(3, 6));
+            points.push_back(Point(2, 4));
+            points.push_back(Point(-2, 4));
+            points.push_back(Point(-3, 5));
+            points.push_back(Point(-5, 0));
+            points.push_back(Point(0, -3));
+            points.push_back(Point(5, 0));
+            LineString ering(points);
+            points.clear();
+            points.push_back(Point(0, 3));
+            points.push_back(Point(2, -1));
+            points.push_back(Point(-2, -1));
+            points.push_back(Point(0, 3));
+            LineString iring1(points);
+            std::vector<LineString> iRings;
+            iRings.push_back(iring1);
+            points.clear();
+            points.push_back(Point(2, 0));
+            points.push_back(Point(3, 0));
+            points.push_back(Point(3, 1));
+            points.push_back(Point(2, 1));
+            points.push_back(Point(2, 0));
+            LineString iring2(points);
+            iRings.push_back(iring2);
+            Polygon poly(ering, iRings);
+
+            // vector<Point> points;
+            // points.push_back(Point(5, 0));
+            // points.push_back(Point(3, 6));
+            // points.push_back(Point(2, 4));
+            // points.push_back(Point(-2, 4));
+            // points.push_back(Point(-3, 5));
+            // points.push_back(Point(-5, 0));
+            // points.push_back(Point(0, -3));
+            // points.push_back(Point(5, 0));
+            // LineString line(points);
+            // Polygon poly(line);
+
+            vector<Envelope> tests;
+            tests.push_back(Envelope(-1, 1, -1, 1));
+            tests.push_back(Envelope(-8, 8, -8, 8));
+            tests.push_back(Envelope(-1, 8, -1, 8));
+            tests.push_back(Envelope(0, 3, 0, 3));
+            tests.push_back(Envelope(-2, 2, -4, -3));
+            tests.push_back(Envelope(-2, 2, 5, 6));
+            tests.push_back(Envelope(-1, 1, -0.5, 0.5));
+            tests.push_back(Envelope(2.1, 2.9, 0.1, 0.9));
+            tests.push_back(Envelope(-6, -6, -4, -4));
+            tests.push_back(Envelope(4, 4, 6, 6));
+
+            for (size_t i = 0; i < tests.size(); ++i)
+            {
+                if (poly.intersects(tests[i]) != (i < 5))
+                {
+                    failedCase += 1;
+                    wrongMessage(poly, tests[i], !(i < 5));
+                }
+            }
+            cout << "Polygon and Envelope Intersect: " << tests.size() - failedCase << " / "
+                 << tests.size() << " tests are passed" << endl;
         }
         else if (t == TEST8)
         {
