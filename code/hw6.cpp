@@ -40,7 +40,7 @@ bool showRoad = true;
 
 unique_ptr<hw6::Tree> pointTree;
 unique_ptr<hw6::Tree> roadTree;
-bool showTree = false;
+bool showTree = true;
 
 hw6::Feature nearestFeature;
 
@@ -216,7 +216,11 @@ void loadRoadData()
 
     cout << "road number: " << geom.size() << endl;
     roadTree->setCapacity(20);
+    auto start = clock();
     roadTree->constructTree(roads);
+    auto end = clock();
+    std::cout << "Road tree time" << std::endl;
+    std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
 }
 
 /*
@@ -233,7 +237,11 @@ void loadStationData()
 
     cout << "station number: " << geom.size() << endl;
     pointTree->setCapacity(5);
+    auto start = clock();
     pointTree->constructTree(features);
+    auto end = clock();
+    std::cout << "Point tree time" << std::endl;
+    std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
 }
 
 /*
@@ -250,7 +258,11 @@ void loadTaxiData()
 
     cout << "taxi number: " << geom.size() << endl;
     pointTree->setCapacity(100);
+    auto start = clock();
     pointTree->constructTree(features);
+    auto end = clock();
+    std::cout << "Taxi Point tree time" << std::endl;
+    std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
 }
 
 /*
@@ -265,9 +277,18 @@ void rangeQuery()
         pointTree->rangeQuery(selectedRect, candidateFeatures);
     else if (mode == RANGELINE)
         roadTree->rangeQuery(selectedRect, candidateFeatures);
-
     // refine step (精确判断时，需要去重，避免查询区域和几何对象的重复计算)
     // TODO
+    if (mode == RANGEPOINT)
+        selectedFeatures = candidateFeatures;
+    else if (mode == RANGELINE)
+    {
+        for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); it++)
+        {
+            if (it->getGeom()->intersects(selectedRect))
+                selectedFeatures.push_back(*it);
+        }
+    }
 }
 
 /*
@@ -285,6 +306,18 @@ void NNQuery(hw6::Point p)
 
     // refine step (精确计算查询点与几何对象的距离)
     // TODO
+    double dist = 1000000;
+    Feature f;
+    for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); ++it)
+    {
+        double tmpDist = it->getGeom()->distance(&p);
+        if (tmpDist < dist)
+        {
+            dist = tmpDist;
+            f = *it;
+        }
+    }
+    nearestFeature = f;
 }
 
 /*
@@ -292,7 +325,7 @@ void NNQuery(hw6::Point p)
  */
 void transfromPt(hw6::Point &pt)
 {
-    const hw6::Envelope bbox = pointTree->getEnvelope();
+    const hw6::Envelope bbox = roadTree->getEnvelope();
     double width = bbox.getMaxX() - bbox.getMinX() + 0.002;
     double height = bbox.getMaxY() - bbox.getMinY() + 0.002;
 
@@ -318,7 +351,8 @@ void display()
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
 
-    const hw6::Envelope bbox = pointTree->getEnvelope();
+    const hw6::Envelope bbox = roadTree->getEnvelope();
+    // const hw6::Envelope bbox = Envelope(-74.099999999999994, -73.799999999999997, 40.600000000000001,  40.799999999999997);
     gluOrtho2D(bbox.getMinX() - 0.001, bbox.getMaxX() + 0.001,
                bbox.getMinY() - 0.001, bbox.getMaxY() + 0.001);
 
@@ -347,6 +381,7 @@ void display()
             roadTree->draw();
         else
             pointTree->draw();
+        // roadTree->draw();
     }
 
     // 离鼠标最近点绘制

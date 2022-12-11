@@ -8,6 +8,8 @@
 /code/.vscode
 /.vscode
 /.vs
+/code/out
+/code/3rd/freeglut/out
 
 # For all
 /code/build
