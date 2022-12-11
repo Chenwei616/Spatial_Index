@@ -216,11 +216,7 @@ void loadRoadData()
 
     cout << "road number: " << geom.size() << endl;
     roadTree->setCapacity(20);
-    auto start = clock();
     roadTree->constructTree(roads);
-    auto end = clock();
-    std::cout << "Road tree time" << std::endl;
-    std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
 }
 
 /*
@@ -237,11 +233,7 @@ void loadStationData()
 
     cout << "station number: " << geom.size() << endl;
     pointTree->setCapacity(5);
-    auto start = clock();
     pointTree->constructTree(features);
-    auto end = clock();
-    std::cout << "Point tree time" << std::endl;
-    std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
 }
 
 /*
@@ -258,11 +250,7 @@ void loadTaxiData()
 
     cout << "taxi number: " << geom.size() << endl;
     pointTree->setCapacity(100);
-    auto start = clock();
     pointTree->constructTree(features);
-    auto end = clock();
-    std::cout << "Taxi Point tree time" << std::endl;
-    std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
 }
 
 /*
@@ -308,10 +296,11 @@ void NNQuery(hw6::Point p)
     // TODO
     double dist = 1000000;
     Feature f;
+    std::cout << candidateFeatures.size() << std::endl;
     for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); ++it)
     {
         double tmpDist = it->getGeom()->distance(&p);
-        if (tmpDist < dist)
+        if (tmpDist < dist && tmpDist)
         {
             dist = tmpDist;
             f = *it;
