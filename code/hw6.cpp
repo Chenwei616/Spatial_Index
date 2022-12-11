@@ -238,11 +238,7 @@ void loadStationData()
 
     cout << "station number: " << geom.size() << endl;
     pointTree->setCapacity(5);
-    auto start = clock();
     pointTree->constructTree(features);
-    auto end = clock();
-    std::cout << "Point tree time" << std::endl;
-    std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
 }
 
 /*
@@ -259,11 +255,7 @@ void loadTaxiData()
 
     cout << "taxi number: " << geom.size() << endl;
     pointTree->setCapacity(100);
-    auto start = clock();
     pointTree->constructTree(features);
-    auto end = clock();
-    std::cout << "Taxi Point tree time" << std::endl;
-    std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
 }
 
 /*
