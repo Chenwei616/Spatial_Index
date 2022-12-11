@@ -17,6 +17,37 @@ namespace hw6
 
         // Task construction
         // TODO
+        // 拆分为4个子节点
+        children[0] = new QuadNode(Envelope(bbox.getMinX(), bbox.getMaxX() - bbox.getWidth() / 2, bbox.getMinY(), bbox.getMaxY() - bbox.getHeight() / 2));
+        children[1] = new QuadNode(Envelope(bbox.getMinX() + bbox.getWidth() / 2, bbox.getMaxX(), bbox.getMinY(), bbox.getMaxY() - bbox.getHeight() / 2));
+        children[2] = new QuadNode(Envelope(bbox.getMinX(), bbox.getMaxX() - bbox.getWidth() / 2, bbox.getMinY() + bbox.getHeight() / 2, bbox.getMaxY()));
+        children[3] = new QuadNode(Envelope(bbox.getMinX() + bbox.getWidth() / 2, bbox.getMaxX(), bbox.getMinY() + bbox.getHeight() / 2, bbox.getMaxY()));
+        // children[0]->bbox.print();
+        // children[1]->bbox.print();
+        // children[2]->bbox.print();
+        // children[3]->bbox.print();
+        // std::cout << std::endl;
+
+        // 分配要素
+        for (auto i : features)
+        {
+            for (auto j = 0; j < 4; ++j)
+            {
+                if (children[j]->getEnvelope().intersect(i.getEnvelope()))
+                    children[j]->features.push_back(i);
+            }
+        }
+
+        // 删除要素向量
+        features.clear();
+
+        // 继续细分
+        for (auto i = 0; i < 4; ++i)
+        {
+            // std::cout << children[i]->features.size() << std::endl;
+            if (children[i]->features.size() > capacity)
+                children[i]->split(capacity);
+        }
     }
 
     void QuadNode::countNode(int &interiorNum, int &leafNum)
@@ -88,8 +119,17 @@ namespace hw6
 
         // Task construction
         // TODO
-
-        bbox = Envelope(-74.1, -73.8, 40.6, 40.8); // 注意此行代码需要更新为features的包围盒，或根节点的包围盒
+        bbox = features[0].getEnvelope();
+        for (auto i : features)
+        {
+            bbox = bbox.unionEnvelope(i.getEnvelope());
+        }
+        root = new QuadNode(bbox);
+        root->add(features);
+        root->split(capacity);
+        // bbox.print();
+        // std::cout << std::endl;
+        // bbox = Envelope(-74.1, -73.8, 40.6, 40.8); // 注意此行代码需要更新为features的包围盒，或根节点的包围盒
 
         return true;
     }

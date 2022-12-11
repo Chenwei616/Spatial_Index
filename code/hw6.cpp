@@ -16,6 +16,7 @@
 #include <map>
 #include <memory>
 #include <vector>
+#include <chrono>
 
 #ifdef USE_RTREE
 #include "RTree.h"
@@ -216,7 +217,11 @@ void loadRoadData()
 
     cout << "road number: " << geom.size() << endl;
     roadTree->setCapacity(20);
+    auto start = std::chrono::high_resolution_clock::now();
     roadTree->constructTree(roads);
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsed = end - start;
+    std::cout << "myallocator elapsed time: " << elapsed.count() << " seconds." << std::endl;
 }
 
 /*
@@ -292,7 +297,8 @@ void NNQuery(hw6::Point p)
  */
 void transfromPt(hw6::Point &pt)
 {
-    const hw6::Envelope bbox = pointTree->getEnvelope();
+    // const hw6::Envelope bbox = pointTree->getEnvelope();
+    const hw6::Envelope bbox = roadTree->getEnvelope();
     double width = bbox.getMaxX() - bbox.getMinX() + 0.002;
     double height = bbox.getMaxY() - bbox.getMinY() + 0.002;
 
@@ -318,7 +324,8 @@ void display()
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
 
-    const hw6::Envelope bbox = pointTree->getEnvelope();
+    // const hw6::Envelope bbox = pointTree->getEnvelope();
+    const hw6::Envelope bbox = roadTree->getEnvelope();
     gluOrtho2D(bbox.getMinX() - 0.001, bbox.getMaxX() + 0.001,
                bbox.getMinY() - 0.001, bbox.getMaxY() + 0.001);
 
