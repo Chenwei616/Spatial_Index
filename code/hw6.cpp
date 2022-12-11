@@ -1,13 +1,13 @@
-// hw6.cpp : 定义控制台应用程序的入口点。
+// hw6.cpp : ??????????ó????????
 //
 
 #include "Common.h"
 #include "Geometry.h"
 #include "shapelib/shapefil.h"
 
-#include "CMakeIn.h" // 配置注入
+#include "CMakeIn.h" // ???????
 
-#include <gl/freeglut.h> // GLUT库头文件
+#include <gl/freeglut.h> // GLUT??????
 
 #include <cstdio>
 #include <ctime>
@@ -16,6 +16,7 @@
 #include <map>
 #include <memory>
 #include <vector>
+#include <chrono>
 
 #ifdef USE_RTREE
 #include "RTree.h"
@@ -50,7 +51,7 @@ hw6::Envelope selectedRect;
 vector<hw6::Feature> selectedFeatures;
 
 /*
- * shapefile文件中name和geometry属性读取
+ * shapefile?????name??geometry??????
  */
 vector<string> readName(const char *filename)
 {
@@ -177,7 +178,7 @@ void wrongMessage(const hw6::Polygon &p, hw6::Envelope e, bool cal)
 }
 
 /*
- * 输出几何信息
+ * ??????????
  */
 void printGeom(vector<hw6::Geometry *> &geom)
 {
@@ -190,7 +191,7 @@ void printGeom(vector<hw6::Geometry *> &geom)
 }
 
 /*
- * 删除几何信息
+ * ??????????
  */
 void deleteGeom(vector<hw6::Geometry *> &geom)
 {
@@ -204,7 +205,7 @@ void deleteGeom(vector<hw6::Geometry *> &geom)
 }
 
 /*
- * 读取纽约道路数据
+ * ???????·????
  */
 void loadRoadData()
 {
@@ -220,7 +221,7 @@ void loadRoadData()
 }
 
 /*
- * 读取纽约自行车租赁点数据
+ * ????????г??????????
  */
 void loadStationData()
 {
@@ -237,7 +238,7 @@ void loadStationData()
 }
 
 /*
- * 读取纽约出租车打车点数据
+ * ????????????????
  */
 void loadTaxiData()
 {
@@ -254,18 +255,18 @@ void loadTaxiData()
 }
 
 /*
- * 区域查询
+ * ??????
  */
 void rangeQuery()
 {
     vector<hw6::Feature> candidateFeatures;
 
-    // filter step (使用四叉树获得查询区域和几何特征包围盒相交的候选集）
+    // filter step (??????????ò????????????????Χ????????????
     if (mode == RANGEPOINT)
         pointTree->rangeQuery(selectedRect, candidateFeatures);
     else if (mode == RANGELINE)
         roadTree->rangeQuery(selectedRect, candidateFeatures);
-    // refine step (精确判断时，需要去重，避免查询区域和几何对象的重复计算)
+    // refine step (????ж????????????????????????ζ???????????)
     // TODO
     if (mode == RANGEPOINT)
         selectedFeatures = candidateFeatures;
@@ -280,19 +281,19 @@ void rangeQuery()
 }
 
 /*
- * 邻近查询
+ * ??????
  */
 void NNQuery(hw6::Point p)
 {
     vector<hw6::Feature> candidateFeatures;
 
-    // filter step (使用四叉树获得距离较近的几何特征候选集)
+    // filter step (??????????????????????????????)
     if (mode == NNPOINT)
         pointTree->NNQuery(p.getX(), p.getY(), candidateFeatures);
     else if (mode == NNLINE)
         roadTree->NNQuery(p.getX(), p.getY(), candidateFeatures);
 
-    // refine step (精确计算查询点与几何对象的距离)
+    // refine step (??????????????ζ???????)
     // TODO
     double dist = 1000000;
     Feature f;
@@ -310,10 +311,11 @@ void NNQuery(hw6::Point p)
 }
 
 /*
- * 从屏幕坐标转换到地理坐标
+ * ??????????????????????
  */
 void transfromPt(hw6::Point &pt)
 {
+    // const hw6::Envelope bbox = pointTree->getEnvelope();
     const hw6::Envelope bbox = roadTree->getEnvelope();
     double width = bbox.getMaxX() - bbox.getMinX() + 0.002;
     double height = bbox.getMaxY() - bbox.getMinY() + 0.002;
@@ -329,7 +331,7 @@ void transfromPt(hw6::Point &pt)
 }
 
 /*
- * 绘制代码
+ * ???????
  */
 void display()
 {
@@ -340,12 +342,12 @@ void display()
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
 
+    // const hw6::Envelope bbox = pointTree->getEnvelope();
     const hw6::Envelope bbox = roadTree->getEnvelope();
-    // const hw6::Envelope bbox = Envelope(-74.099999999999994, -73.799999999999997, 40.600000000000001,  40.799999999999997);
     gluOrtho2D(bbox.getMinX() - 0.001, bbox.getMaxX() + 0.001,
                bbox.getMinY() - 0.001, bbox.getMaxY() + 0.001);
 
-    // 道路绘制
+    // ??·????
     if (showRoad)
     {
         glColor3d(252 / 255.0, 214 / 255.0, 164 / 255.0);
@@ -353,7 +355,7 @@ void display()
             roads[i].draw();
     }
 
-    // 点绘制
+    // ?????
     if (!(mode == RANGELINE || mode == NNLINE))
     {
         glPointSize((float)pointSize);
@@ -362,7 +364,7 @@ void display()
             features[i].draw();
     }
 
-    // 四叉树绘制
+    // ?????????
     if (showTree)
     {
         glColor3d(0.0, 146 / 255.0, 247 / 255.0);
@@ -373,7 +375,7 @@ void display()
         // roadTree->draw();
     }
 
-    // 离鼠标最近点绘制
+    // ?????????????
     if (mode == NNPOINT)
     {
         glPointSize(5.0);
@@ -381,7 +383,7 @@ void display()
         nearestFeature.draw();
     }
 
-    // 离鼠标最近道路绘制
+    // ??????????·????
     if (mode == NNLINE)
     {
         glLineWidth(3.0);
@@ -390,7 +392,7 @@ void display()
         glLineWidth(1.0);
     }
 
-    // 区域选择绘制
+    // ??????????
     if (mode == RANGEPOINT || mode == RANGELINE)
     {
         glColor3d(0.0, 0.0, 0.0);
@@ -405,7 +407,7 @@ void display()
 }
 
 /*
- * 鼠标和键盘交互
+ * ??????????
  */
 void mouse(int button, int state, int x, int y)
 {
