@@ -71,7 +71,30 @@ namespace hw6
             // Task calculate the distance between Point P(x, y) and Line [P1(x1, y1), P2(x2, y2)] (less than 10 lines)
             // TODO
             double x = this->getX(), y = this->getY(), x0, y0;
-            if ((x - x1) / (y - y1) == (x - x2) / (y - y2) && ((x1 <= x && x <= x2) || (x2 <= x && x <= x1)))
+
+            if (x1 == x2)
+            {
+                x0 = x1;
+                y0 = y;
+                if ((y1 <= y0 && y0 <= y2) || (y2 <= y0 && y0 <= y1))
+                {
+                    mindist = 0;
+                    break;
+                }
+                else
+                {
+                    dist = std::min(sqrt(pow((x - x1), 2) + pow((y - y1), 2)), sqrt(pow((x - x2), 2) + pow((y - y2), 2)));
+                    mindist = std::min(mindist, dist);
+                    continue;
+                }
+            }
+
+            if (y1 == y2)
+            {
+                x0 = x;
+                y0 = y1;
+            }
+            else if ((x - x1) / (y - y1) == (x - x2) / (y - y2) && ((x1 <= x && x <= x2) || (x2 <= x && x <= x1)))
             {
                 mindist = 0;
                 break;

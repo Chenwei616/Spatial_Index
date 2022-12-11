@@ -41,7 +41,7 @@ bool showRoad = true;
 
 unique_ptr<hw6::Tree> pointTree;
 unique_ptr<hw6::Tree> roadTree;
-bool showTree = false;
+bool showTree = true;
 
 hw6::Feature nearestFeature;
 
@@ -238,7 +238,11 @@ void loadStationData()
 
     cout << "station number: " << geom.size() << endl;
     pointTree->setCapacity(5);
+    auto start = clock();
     pointTree->constructTree(features);
+    auto end = clock();
+    std::cout << "Point tree time" << std::endl;
+    std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
 }
 
 /*
@@ -255,7 +259,11 @@ void loadTaxiData()
 
     cout << "taxi number: " << geom.size() << endl;
     pointTree->setCapacity(100);
+    auto start = clock();
     pointTree->constructTree(features);
+    auto end = clock();
+    std::cout << "Taxi Point tree time" << std::endl;
+    std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
 }
 
 /*
@@ -270,9 +278,18 @@ void rangeQuery()
         pointTree->rangeQuery(selectedRect, candidateFeatures);
     else if (mode == RANGELINE)
         roadTree->rangeQuery(selectedRect, candidateFeatures);
-
     // refine step (精确判断时，需要去重，避免查询区域和几何对象的重复计算)
     // TODO
+    if (mode == RANGEPOINT)
+        selectedFeatures = candidateFeatures;
+    else if (mode == RANGELINE)
+    {
+        for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); it++)
+        {
+            if (it->getGeom()->intersects(selectedRect))
+                selectedFeatures.push_back(*it);
+        }
+    }
 }
 
 /*
@@ -290,6 +307,18 @@ void NNQuery(hw6::Point p)
 
     // refine step (精确计算查询点与几何对象的距离)
     // TODO
+    double dist = 1000000;
+    Feature f;
+    for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); ++it)
+    {
+        double tmpDist = it->getGeom()->distance(&p);
+        if (tmpDist < dist)
+        {
+            dist = tmpDist;
+            f = *it;
+        }
+    }
+    nearestFeature = f;
 }
 
 /*
@@ -354,6 +383,7 @@ void display()
             roadTree->draw();
         else
             pointTree->draw();
+        // roadTree->draw();
     }
 
     // 离鼠标最近点绘制
