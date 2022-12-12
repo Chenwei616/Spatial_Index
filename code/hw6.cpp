@@ -10,7 +10,7 @@
 #include <gl/freeglut.h> // GLUT库头文件
 
 #include <cstdio>
-#include <ctime>
+// #include <ctime>
 #include <iostream>
 #include <list>
 #include <map>
@@ -300,17 +300,15 @@ void NNQuery(hw6::Point p)
     // refine step (精确计算查询点与几何对象的距离)
     // TODO
     double dist = 1000000;
-    Feature f;
     for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); ++it)
     {
         double tmpDist = it->getGeom()->distance(&p);
-        if (tmpDist < dist)
+        if (tmpDist < dist && tmpDist)
         {
             dist = tmpDist;
-            f = *it;
+            nearestFeature = *it;
         }
     }
-    nearestFeature = f;
 }
 
 /*
