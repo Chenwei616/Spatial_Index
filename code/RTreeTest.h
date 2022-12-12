@@ -316,7 +316,7 @@ namespace hw6
 
         srand(time(nullptr));
 
-        forConstCapAnalyseRTree<70, 200, 10>(features);
+        forConstCapAnalyseRTree<180, 200, 10>(features);
     }
 
 } // namespace hw6

@@ -181,15 +181,39 @@ namespace hw6
 			}
 		}
 
+		int depth;
+		RNode<M>* res;
+		void dfs(double x, double y, RNode<M>* node, int d)
+		{
+			if (node->isLeafNode())
+				res = node;
+			bool flag = true;
+			for (int i = 0; i < node->getChildNum(); i++)
+			{
+				RNode<M>* tmpNode = node->getChildNode(i);
+				if(tmpNode->getEnvelope().contain(x, y))
+				{
+					flag = false;
+					dfs(x, y, tmpNode, d + 1);
+				}
+			}
+			if (flag && d >= depth)
+			{
+				depth = d;
+				res = node;
+			}
+		}
+
+
 		RNode<M> *pointInLeafNode(double x, double y)
 		{
 			// TODO
 			RNode<M> *node = this;
 			int h = countHeight(0);
-			std::vector<RNode<M> *> nodes, tmpNodes;
+			/*std::vector<RNode<M> *> nodes, tmpNodes;
 			for (int i = 0; i < getChildNum(); i++)
 				nodes.push_back(getChildNode(i));
-			for (int i = 0; i < h - 2; i++)
+			for (int i = 0; i < h - 1; i++)
 			{
 				bool flag = true;
 				for (int j = 0; j < nodes.size(); j++)
@@ -206,8 +230,12 @@ namespace hw6
 				nodes.clear();
 				for (int j = 0; j < node->getChildNum(); j++)
 					nodes.push_back(node->getChildNode(j));
-			}
-			return node;
+			}*/
+			depth = 0;
+			res = nullptr;
+			dfs(x, y, node, 1);
+			// std::cout << node->getChildNode(0)->isLeafNode() << std::endl;
+			return res;
 		}
 	};
 
@@ -370,143 +398,6 @@ namespace hw6
 					leafNodes.push_back(seedNode2);
 				}
 			}
-
-			//// 叶子节点获取
-			// for (auto it = features.begin(); it != features.end(); ++it)
-			//{
-			//	double minAreaAdd = 1000000;
-			//	Envelope featureEnvelope = (*it).getEnvelope(), markEnvelope;
-			//	RNode<M> mark = RNode<M>(featureEnvelope);
-			//	std::vector<RNode<M>>::iterator markIter;
-			//	int markPos;
-			//	if (leafNodes.size() == 0)
-			//	{
-			//		RNode<M> firstNode = RNode<M>(featureEnvelope);
-			//		firstNode.add((*it));
-			//		leafNodes.push_back(firstNode);
-			//		continue;
-			//	}
-
-			//	// 与每个叶子节点比
-			//	for (auto rIter = leafNodes.begin(); rIter != leafNodes.end(); ++rIter)
-			//	{
-			//		Envelope nodeEnvelope = (*rIter).getEnvelope();
-			//		double minX = std::min(featureEnvelope.getMinX(), nodeEnvelope.getMinX());
-			//		double minY = std::min(featureEnvelope.getMinY(), nodeEnvelope.getMinY());
-			//		double maxX = std::max(featureEnvelope.getMaxX(), nodeEnvelope.getMaxX());
-			//		double maxY = std::max(featureEnvelope.getMaxY(), nodeEnvelope.getMaxY());
-			//		Envelope newEnvelope(minX, maxX, minY, maxY);
-			//		double areaAdd = newEnvelope.getArea() - nodeEnvelope.getArea();
-			//		if (areaAdd < minAreaAdd)
-			//		{
-			//			minAreaAdd = areaAdd;
-			//			mark = *rIter;
-			//			markEnvelope = newEnvelope;
-			//			markIter = rIter;
-			//		}
-			//	}
-
-			//	if (mark.getFeatureNum() < M)
-			//	{
-			//		markIter->add(*it);
-			//		markIter->setEnvelope(markEnvelope);
-			//	}
-			//	// 二次分裂
-			//	else
-			//	{
-			//		std::vector<Feature> allFeatures = mark.getFeatures();
-			//		Feature seed1, seed2, insertFeature = *it;
-			//		std::vector<Feature>::iterator seed1Iter, seed2Iter;
-			//		int seed1pos, seed2pos;
-			//		allFeatures.push_back(insertFeature);
-			//		double left = 1000000, right = -1000000;
-			//		for (auto fIter = allFeatures.begin(); fIter != allFeatures.end(); ++fIter)
-			//		{
-			//			if (left > fIter->getEnvelope().getMinX())
-			//			{
-			//				left = fIter->getEnvelope().getMinX();
-			//				seed1 = *fIter;
-			//				seed1Iter = fIter;
-			//			}
-			//			if (right < fIter->getEnvelope().getMaxX())
-			//			{
-			//				right = fIter->getEnvelope().getMaxX();
-			//				seed2 = *fIter;
-			//				seed2Iter = fIter;
-			//			}
-			//		}
-			//		Envelope env1 = seed1.getEnvelope(), env2 = seed2.getEnvelope();
-			//		std::vector<Feature> seed1Features, seed2Features;
-			//		seed1Features.push_back(seed1);
-			//		seed2Features.push_back(seed2);
-
-			//		for (auto fIter = allFeatures.begin(); fIter != allFeatures.end();)
-			//		{
-			//			if (fIter->getName() == seed1.getName())
-			//			{
-			//				fIter = allFeatures.erase(fIter);
-			//				break;
-			//			}
-			//			else
-			//				fIter++;
-			//		}
-			//		for (auto fIter = allFeatures.begin(); fIter != allFeatures.end();)
-			//		{
-			//			if (fIter->getName() == seed2.getName())
-			//			{
-			//				fIter = allFeatures.erase(fIter);
-			//				break;
-			//			}
-			//			else
-			//				fIter++;
-			//		}
-			//		for (auto fIter = allFeatures.begin(); fIter != allFeatures.end(); ++fIter)
-			//		{
-			//			double addArea1, addArea2;
-			//			double minX = std::min(fIter->getEnvelope().getMinX(), env1.getMinX());
-			//			double minY = std::min(fIter->getEnvelope().getMinY(), env1.getMinY());
-			//			double maxX = std::max(fIter->getEnvelope().getMaxX(), env1.getMaxX());
-			//			double maxY = std::max(fIter->getEnvelope().getMaxY(), env1.getMaxY());
-			//			Envelope newEnvelope1, newEnvelope2;
-			//			newEnvelope1 = Envelope(minX, maxX, minY, maxY);
-			//			addArea1 = newEnvelope1.getArea() - env1.getArea();
-			//			minX = std::min(fIter->getEnvelope().getMinX(), env2.getMinX());
-			//			minY = std::min(fIter->getEnvelope().getMinY(), env2.getMinY());
-			//			maxX = std::max(fIter->getEnvelope().getMaxX(), env2.getMaxX());
-			//			maxY = std::max(fIter->getEnvelope().getMaxY(), env2.getMaxY());
-			//			newEnvelope2 = Envelope(minX, maxX, minY, maxY);
-			//			addArea2 = newEnvelope2.getArea() - env2.getArea();
-			//			if (addArea1 < addArea2)
-			//			{
-			//				seed1Features.push_back(*fIter);
-			//				env1 = newEnvelope1;
-			//			}
-			//			else
-			//			{
-			//				seed2Features.push_back(*fIter);
-			//				env2 = newEnvelope2;
-			//			}
-			//		}
-			//		RNode<M> seedNode1(env1), seedNode2(env2);
-			//		for (auto fIter = seed1Features.begin(); fIter != seed1Features.end(); ++fIter)
-			//			seedNode1.add(*fIter);
-			//		for (auto fIter = seed2Features.begin(); fIter != seed2Features.end(); ++fIter)
-			//			seedNode2.add(*fIter);
-			//		leafNodes.erase(markIter);
-			//		leafNodes.push_back(seedNode1);
-			//		leafNodes.push_back(seedNode2);
-			//	}
-			//}
-
-			/*std::vector<RNode<M>*> newleafNodes;
-			for (auto it = leafNodes.begin(); it != leafNodes.end(); ++it)
-			{
-				RNode<M>* insertNode = new RNode<M>(it->getEnvelope());
-				auto inputFeatures = it->getFeatures();
-				for (auto fIter = inputFeatures.begin(); fIter != inputFeatures.end(); fIter++)
-					insertNode->add(*fIter);
-				newleafNodes.push_back(insertNode);
-			}*/
 
 			std::vector<RNode<M> *> childNodes;
 			std::vector<RNode<M> *> parentNodes;
@@ -673,9 +564,9 @@ namespace hw6
 			RNode<M> *node = pointInLeafNode(x, y);
 			if (node->isLeafNode())
 			{
-				std::vector<Feature> features = node->getFeatures();
-				double dist = 0;
-				for (auto it = features.begin(); it != features.end(); ++it)
+				std::vector<Feature> newFeatures = node->getFeatures();
+				double dist = 1000000;
+				for (auto it = newFeatures.begin(); it != newFeatures.end(); ++it)
 				{
 					Envelope env = it->getEnvelope();
 					double d1 = env.getMinX() - x, d2 = env.getMinY() - y, d3 = env.getMaxX() - x, d4 = env.getMaxY() - y;
@@ -686,7 +577,6 @@ namespace hw6
 					dist = std::min(std::max(std::max(dist1, dist2), std::max(dist3, dist4)), dist);
 				}
 				const Envelope rect = Envelope(x - dist, x + dist, y - dist, y + dist);
-				// std::cout << features.size() << std::endl;
 				rangeQuery(rect, features);
 			}
 			else
@@ -707,7 +597,6 @@ namespace hw6
 					dist = std::min(std::max(std::max(dist1, dist2), std::max(dist3, dist4)), dist);
 				}
 				const Envelope rect = Envelope(x - dist, x + dist, y - dist, y + dist);
-				// std::cout << features.size() << std::endl;
 				rangeQuery(rect, features);
 			}
 			return true;

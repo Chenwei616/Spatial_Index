@@ -50,6 +50,8 @@ hw6::Point corner[2];
 hw6::Envelope selectedRect;
 vector<hw6::Feature> selectedFeatures;
 
+void NNQuery(hw6::Point p);
+
 /*
  * shapefile?????name??geometry??????
  */
@@ -218,6 +220,8 @@ void loadRoadData()
     cout << "road number: " << geom.size() << endl;
     roadTree->setCapacity(20);
     roadTree->constructTree(roads);
+    // mode = NNLINE;
+    // NNQuery(Point(-74.0095, 40.7087));
 }
 
 /*
@@ -293,11 +297,13 @@ void NNQuery(hw6::Point p)
     else if (mode == NNLINE)
         roadTree->NNQuery(p.getX(), p.getY(), candidateFeatures);
 
+    std::cout << candidateFeatures.size() << std::endl;
+    std::cout << p.getX() << " " << p.getY() << std::endl;
+
     // refine step (??????????????¦Æ???????)
     // TODO
     double dist = 1000000;
     Feature f;
-    std::cout << candidateFeatures.size() << std::endl;
     for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); ++it)
     {
         double tmpDist = it->getGeom()->distance(&p);
