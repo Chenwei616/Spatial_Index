@@ -276,10 +276,24 @@ namespace hw6
         if constexpr (I <= Last)
         {
             RTree<I> rtree;
+            auto start = clock();
             rtree.constructTree(features);
 
             // TODO
-
+            int height = 0;
+            auto newFeatures = features;
+            rtree.countHeight(height);
+            auto end = clock();
+            std::cout << "Capicity: " << int(I) << std::endl;
+            std::cout << "Height: " << height << std::endl;
+            std::cout << "Construction time: ";
+            std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
+            start = clock();
+            for (int i = 0; i < 10000; i++)
+                rtree.NNQuery(-73.9521, 40.6821, newFeatures);
+            end = clock();
+            std::cout << "NNQuery time: ";
+            std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
             forConstCapAnalyseRTree<I + Step, Last, Step>(features);
         }
     }
