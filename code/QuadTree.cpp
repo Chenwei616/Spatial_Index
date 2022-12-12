@@ -81,17 +81,41 @@ namespace hw6
     void QuadNode::rangeQuery(const Envelope &rect,
                               std::vector<Feature> &features)
     {
-        if (!bbox.intersect(rect))
-            return;
-
         // Task range query
         // TODO
+        if (!bbox.intersect(rect))
+            return;
+        else if (!isLeafNode())
+        {
+            for (auto i = 0; i < 4; ++i)
+            {
+                children[i]->rangeQuery(rect, features);
+            }
+        }
+        else if (rect.contain(bbox))
+            features.insert(features.end(), this->features.begin(), this->features.end());
+        else
+            for (auto i : this->features)
+                if (rect.intersect(i.getEnvelope()))
+                    features.push_back(i);
     }
 
     QuadNode *QuadNode::pointInLeafNode(double x, double y)
     {
         // Task NN query
         // TODO
+        if (!this->bbox.contain(Point(x, y).getEnvelope()))
+            return nullptr;
+        else if (isLeafNode())
+        {
+            return this;
+        }
+        else
+        {
+            for (auto i = 0; i < 4; ++i)
+                if (children[i]->pointInLeafNode(x, y) != nullptr)
+                    return children[i]->pointInLeafNode(x, y);
+        }
 
         return nullptr;
     }
@@ -156,7 +180,8 @@ namespace hw6
 
         // Task range query
         // TODO
-
+        if (root)
+            root->rangeQuery(rect, features);
         // filter step (选择查询区域与几何对象包围盒相交的几何对象)
 
         // 注意四叉树区域查询仅返回候选集，精炼步在hw6的rangeQuery中完成
@@ -169,13 +194,20 @@ namespace hw6
 
         // Task NN query
         // TODO
-
-        // filter step
-        // (使用maxDistance2Envelope函数，获得查询点到几何对象包围盒的最短的最大距离，然后区域查询获得候选集)
+        QuadNode *leafNode = root->pointInLeafNode(x, y);
 
         const Envelope &envelope = root->getEnvelope();
         double minDist = std::max(envelope.getWidth(), envelope.getHeight());
 
+        for (auto i = 0; i < leafNode->getFeatureNum(); ++i)
+        {
+            minDist = std::min(minDist, leafNode->getFeature(i).maxDistance2Envelope(x, y));
+        }
+
+        root->rangeQuery(Envelope(x - minDist, x + minDist, y - minDist, y + minDist), features);
+
+        // filter step
+        // (使用maxDistance2Envelope函数，获得查询点到几何对象包围盒的最短的最大距离，然后区域查询获得候选集)
         // 注意四叉树邻近查询仅返回候选集，精炼步在hw6的NNQuery中完成
 
         return true;

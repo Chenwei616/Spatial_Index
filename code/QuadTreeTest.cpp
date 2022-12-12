@@ -39,19 +39,21 @@ namespace hw6
             QuadTree *qtree = new QuadTree();
             // Task 构造四叉树，输出四叉树的节点数目和高度
             // TODO
-
+            qtree->setCapacity(cap);
             clock_t start_time = clock();
-            // TODO
+            qtree->constructTree(features);
             clock_t end_time = clock();
+            // cout << "Height: ";
 
             int height = 0, interiorNum = 0, leafNum = 0;
-            // TODO
+            qtree->countHeight(height);
+            qtree->countNode(interiorNum, leafNum);
 
             cout << "Capacity " << cap << "\n";
             cout << "Height: " << height
                  << " \tInterior node number: " << interiorNum
                  << " \tLeaf node number: " << leafNum << "\n";
-            cout << "Construction time: " << (end_time - start_time) / 1000.0 << "s"
+            cout << "Construction time: " << (end_time - start_time) / 1000.0 // << "s"
                  << endl;
 
             double x, y;
@@ -61,12 +63,22 @@ namespace hw6
             {
                 x = -((rand() % 225) / 10000.0 + 73.9812);
                 y = (rand() % 239) / 10000.0 + 40.7247;
+                // NNQuery(Point(x, y));
                 qtree->NNQuery(x, y, candidateFeatures);
-                // refine step
-                // TODO
+                // double dist = 1000000;
+                // for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); ++it)
+                // {
+                //     double tmpDist = it->getGeom()->distance(&Point(x, y));
+                //     if (tmpDist < dist && tmpDist)
+                //     {
+                //         dist = tmpDist;
+                //         // nearestFeature = *it;
+                //     }
+                // }
+                candidateFeatures.clear();
             }
             end_time = clock();
-            cout << "NNQuery time: " << (end_time - start_time) / 1000.0 << "s"
+            cout << "NNQuery time: " << (end_time - start_time) / 1000.0 // << "s"
                  << endl
                  << endl;
 
