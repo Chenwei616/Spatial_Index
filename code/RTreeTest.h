@@ -275,25 +275,47 @@ namespace hw6
     {
         if constexpr (I <= Last)
         {
-            RTree<I> rtree;
-            auto start = clock();
-            rtree.constructTree(features);
-
+            RTree<I> *rtree = new RTree<I>;
             // TODO
-            int height = 0;
-            auto newFeatures = features;
-            rtree.countHeight(height);
-            auto end = clock();
+            // construct RTree
+            auto start_time = clock();
+            rtree->constructTree(features);
+            auto end_time = clock();
+
+            int height = 0, interiorNum = 0, leafNum = 0;
+            rtree->countHeight(height);
+            rtree->countNode(interiorNum, leafNum);
             std::cout << "Capicity: " << int(I) << std::endl;
-            std::cout << "Height: " << height << std::endl;
-            std::cout << "Construction time: ";
-            std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
-            start = clock();
-            for (int i = 0; i < 10000; i++)
-                rtree.NNQuery(-73.9521, 40.6821, newFeatures);
-            end = clock();
-            std::cout << "NNQuery time: ";
-            std::cout << (double)(end - start) / CLOCKS_PER_SEC << std::endl;
+            std::cout << "Height: " << height
+                      << " \tInterior node number: " << interiorNum
+                      << " \tLeaf node number: " << leafNum << "\n";
+            std::cout << "Construction time: " << (double)(end_time - start_time) / CLOCKS_PER_SEC << std::endl;
+
+            double x, y;
+            vector<Feature> candidateFeatures;
+            start_time = clock();
+            for (int i = 0; i < 100000; ++i)
+            {
+                x = -((rand() % 225) / 10000.0 + 73.9812);
+                y = (rand() % 239) / 10000.0 + 40.7247;
+                // NNQuery(Point(x, y));
+                rtree->NNQuery(x, y, candidateFeatures);
+                // double dist = 1000000;
+                // for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); ++it)
+                // {
+                //     double tmpDist = it->getGeom()->distance(&Point(x, y));
+                //     if (tmpDist < dist && tmpDist)
+                //     {
+                //         dist = tmpDist;
+                //         // nearestFeature = *it;
+                //     }
+                // }
+                candidateFeatures.clear();
+            }
+            end_time = clock();
+            std::cout << "NNQuery time: " << (double)(end_time - start_time) / CLOCKS_PER_SEC << std::endl;
+            std::cout << std::endl;
+            delete rtree;
             forConstCapAnalyseRTree<I + Step, Last, Step>(features);
         }
     }
