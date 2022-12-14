@@ -292,24 +292,26 @@ namespace hw6
             std::cout << "Construction time: " << (double)(end_time - start_time) / CLOCKS_PER_SEC << std::endl;
 
             double x, y;
+            Feature nearestFeature;
             vector<Feature> candidateFeatures;
+            srand(0);
+
             start_time = clock();
             for (int i = 0; i < 100000; ++i)
             {
                 x = -((rand() % 225) / 10000.0 + 73.9812);
                 y = (rand() % 239) / 10000.0 + 40.7247;
-                // NNQuery(Point(x, y));
                 rtree->NNQuery(x, y, candidateFeatures);
-                // double dist = 1000000;
-                // for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); ++it)
-                // {
-                //     double tmpDist = it->getGeom()->distance(&Point(x, y));
-                //     if (tmpDist < dist && tmpDist)
-                //     {
-                //         dist = tmpDist;
-                //         // nearestFeature = *it;
-                //     }
-                // }
+                double dist = 1000000;
+                for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); ++it)
+                {
+                    double tmpDist = it->getGeom()->distance(&Point(x, y));
+                    if (tmpDist < dist && tmpDist)
+                    {
+                        dist = tmpDist;
+                        nearestFeature = *it;
+                    }
+                }
                 candidateFeatures.clear();
             }
             end_time = clock();
@@ -335,8 +337,6 @@ namespace hw6
             features.push_back(Feature(name[i], geom[i]));
 
         cout << "taxi number: " << geom.size() << endl;
-
-        srand(time(nullptr));
 
         forConstCapAnalyseRTree<70, 200, 10>(features);
     }

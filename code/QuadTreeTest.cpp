@@ -33,7 +33,6 @@ namespace hw6
 
         cout << "taxi number: " << geom.size() << endl;
 
-        srand(time(nullptr));
         for (int cap = 70; cap <= 200; cap += 10)
         {
             QuadTree *qtree = new QuadTree();
@@ -57,24 +56,26 @@ namespace hw6
                  << endl;
 
             double x, y;
+            Feature nearestFeature;
             vector<Feature> candidateFeatures;
+            srand(0);
+
             start_time = clock();
             for (int i = 0; i < 100000; ++i)
             {
                 x = -((rand() % 225) / 10000.0 + 73.9812);
                 y = (rand() % 239) / 10000.0 + 40.7247;
-                // NNQuery(Point(x, y));
                 qtree->NNQuery(x, y, candidateFeatures);
-                // double dist = 1000000;
-                // for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); ++it)
-                // {
-                //     double tmpDist = it->getGeom()->distance(&Point(x, y));
-                //     if (tmpDist < dist && tmpDist)
-                //     {
-                //         dist = tmpDist;
-                //         // nearestFeature = *it;
-                //     }
-                // }
+                double dist = 1000000;
+                for (auto it = candidateFeatures.begin(); it != candidateFeatures.end(); ++it)
+                {
+                    double tmpDist = it->getGeom()->distance(&Point(x, y));
+                    if (tmpDist < dist && tmpDist)
+                    {
+                        dist = tmpDist;
+                        nearestFeature = *it;
+                    }
+                }
                 candidateFeatures.clear();
             }
             end_time = clock();
