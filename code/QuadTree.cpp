@@ -174,9 +174,6 @@ namespace hw6
         // TODO
         if (root)
             root->rangeQuery(rect, features);
-        // filter step (选择查询区域与几何对象包围盒相交的几何对象)
-
-        // 注意四叉树区域查询仅返回候选集，精炼步在hw6的rangeQuery中完成
     }
 
     bool QuadTree::NNQuery(double x, double y, std::vector<Feature> &features)
@@ -195,12 +192,7 @@ namespace hw6
         {
             minDist = std::min(minDist, leafNode->getFeature(i).maxDistance2Envelope(x, y));
         }
-
         root->rangeQuery(Envelope(x - minDist, x + minDist, y - minDist, y + minDist), features);
-
-        // filter step
-        // (使用maxDistance2Envelope函数，获得查询点到几何对象包围盒的最短的最大距离，然后区域查询获得候选集)
-        // 注意四叉树邻近查询仅返回候选集，精炼步在hw6的NNQuery中完成
 
         return true;
     }
