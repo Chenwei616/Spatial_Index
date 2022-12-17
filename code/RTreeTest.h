@@ -257,9 +257,6 @@ namespace hw6
             for (size_t i = 0; i < geom2.size(); ++i)
                 delete geom2[i];
             geom2.clear();
-
-            // cout << "RTree Construction: " << cct << " / " << ncase
-            //      << " tests are passed" << endl;
         }
         else if (t == TEST8)
         {

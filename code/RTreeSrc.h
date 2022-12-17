@@ -150,7 +150,6 @@ namespace hw6
 				{
 					bbox.draw();
 					children[i]->draw();
-					// children[i]->getEnvelope().draw();
 				}
 		}
 
@@ -210,31 +209,9 @@ namespace hw6
 			// TODO
 			RNode<M> *node = this;
 			int h = countHeight(0);
-			/*std::vector<RNode<M> *> nodes, tmpNodes;
-			for (int i = 0; i < getChildNum(); i++)
-				nodes.push_back(getChildNode(i));
-			for (int i = 0; i < h - 1; i++)
-			{
-				bool flag = true;
-				for (int j = 0; j < nodes.size(); j++)
-				{
-					if (nodes[j]->getEnvelope().contain(x, y))
-					{
-						node = nodes[j];
-						flag = false;
-						break;
-					}
-				}
-				if (flag)
-					break;
-				nodes.clear();
-				for (int j = 0; j < node->getChildNum(); j++)
-					nodes.push_back(node->getChildNode(j));
-			}*/
 			depth = 0;
 			res = nullptr;
 			dfs(x, y, node, 1);
-			// std::cout << node->getChildNode(0)->isLeafNode() << std::endl;
 			return res;
 		}
 	};
@@ -411,7 +388,6 @@ namespace hw6
 				// 其余节点获取
 				std::vector<RNode<M> *>::iterator markIter;
 				firstNode = new RNode<M>(childNodes[0]->getEnvelope());
-				// RNode<M> firstNode(childNodes[0].getEnvelope());
 				firstNode->add(childNodes[0]);
 				parentNodes.push_back(firstNode);
 				for (auto childIter = childNodes.begin() + 1; childIter != childNodes.end(); ++childIter)

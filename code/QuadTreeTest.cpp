@@ -349,14 +349,7 @@ namespace hw6
             LineString iring1(points);
             std::vector<LineString> iRings;
             iRings.push_back(iring1);
-            // points.clear();
-            // points.push_back(Point(2, 0));
-            // points.push_back(Point(3, 0));
-            // points.push_back(Point(3, 1));
-            // points.push_back(Point(2, 1));
-            // points.push_back(Point(2, 0));
-            // LineString iring2(points);
-            // iRings.push_back(iring2);
+
             Polygon poly(ering, iRings);
             points.clear();
             points.push_back(Point(5, 4));
@@ -421,18 +414,6 @@ namespace hw6
             LineString iring2(points);
             iRings.push_back(iring2);
             Polygon poly(ering, iRings);
-
-            // vector<Point> points;
-            // points.push_back(Point(5, 0));
-            // points.push_back(Point(3, 6));
-            // points.push_back(Point(2, 4));
-            // points.push_back(Point(-2, 4));
-            // points.push_back(Point(-3, 5));
-            // points.push_back(Point(-5, 0));
-            // points.push_back(Point(0, -3));
-            // points.push_back(Point(5, 0));
-            // LineString line(points);
-            // Polygon poly(line);
 
             vector<Envelope> tests;
             tests.push_back(Envelope(-1, 1, -1, 1));

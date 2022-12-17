@@ -219,13 +219,7 @@ void loadRoadData()
 
     cout << "road number: " << geom.size() << endl;
     roadTree->setCapacity(20);
-    // auto start = std::chrono::high_resolution_clock::now();
     roadTree->constructTree(roads);
-    // mode = NNLINE;
-    // NNQuery(Point(-74.0095, 40.7087));
-    // auto end = std::chrono::high_resolution_clock::now();
-    // std::chrono::duration<double> elapsed = end - start;
-    // std::cout << "myallocator elapsed time: " << elapsed.count() << " seconds." << std::endl;
 }
 
 /*
