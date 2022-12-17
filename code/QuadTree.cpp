@@ -146,7 +146,6 @@ namespace hw6
         root = new QuadNode(bbox);
         root->add(features);
         root->split(capacity);
-        // bbox = Envelope(-74.1, -73.8, 40.6, 40.8); // 注意此行代码需要更新为features的包围盒，或根节点的包围盒
 
         return true;
     }
