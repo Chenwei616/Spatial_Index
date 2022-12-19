@@ -1,0 +1,232 @@
+[
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFREEGLUT_STATIC -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD -std:c++17 /FoCMakeFiles\\hw6_lib.dir\\Geometry.cpp.obj /FdCMakeFiles\\hw6_lib.dir\\hw6_lib.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\Geometry.cpp",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/Geometry.cpp"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFREEGLUT_STATIC -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD -std:c++17 /FoCMakeFiles\\hw6_lib.dir\\QuadTree.cpp.obj /FdCMakeFiles\\hw6_lib.dir\\hw6_lib.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\QuadTree.cpp",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/QuadTree.cpp"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFREEGLUT_STATIC -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD -std:c++17 /FoCMakeFiles\\hw6_lib.dir\\QuadTreeTest.cpp.obj /FdCMakeFiles\\hw6_lib.dir\\hw6_lib.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\QuadTreeTest.cpp",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/QuadTreeTest.cpp"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFREEGLUT_STATIC -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD -std:c++17 /FoCMakeFiles\\hw6_app.dir\\hw6.cpp.obj /FdCMakeFiles\\hw6_app.dir/ /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\hw6.cpp",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/hw6.cpp"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_callbacks.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_callbacks.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_callbacks.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_cursor.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_cursor.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_cursor.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_display.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_display.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_display.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_ext.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_ext.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_ext.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_font_data.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_font_data.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_font_data.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_gamemode.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_gamemode.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_gamemode.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_geometry.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_geometry.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_geometry.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_gl2.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_gl2.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_gl2.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_init.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_init.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_init.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_input_devices.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_input_devices.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_input_devices.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_joystick.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_joystick.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_joystick.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_main.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_main.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_main.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_misc.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_misc.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_misc.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_overlay.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_overlay.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_overlay.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_spaceball.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_spaceball.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_spaceball.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_state.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_state.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_state.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_stroke_mono_roman.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_stroke_mono_roman.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_stroke_mono_roman.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_stroke_roman.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_stroke_roman.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_stroke_roman.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_structure.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_structure.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_structure.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_teapot.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_teapot.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_teapot.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_videoresize.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_videoresize.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_videoresize.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_window.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_window.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_window.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_font.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_font.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_font.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\fg_menu.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\fg_menu.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/fg_menu.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_cursor_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_cursor_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_cursor_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_display_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_display_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_display_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_ext_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_ext_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_ext_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_gamemode_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_gamemode_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_gamemode_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_init_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_init_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_init_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_input_devices_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_input_devices_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_input_devices_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_joystick_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_joystick_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_joystick_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_main_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_main_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_main_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_menu_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_menu_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_menu_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_spaceball_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_spaceball_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_spaceball_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_state_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_state_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_state_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_structure_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_structure_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_structure_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_window_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_window_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_window_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_cmap_mswin.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\mswin\\fg_cmap_mswin.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/mswin/fg_cmap_mswin.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/freeglut",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\build -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /FoCMakeFiles\\freeglut_static.dir\\src\\util\\xparsegeometry_repl.c.obj /FdCMakeFiles\\freeglut_static.dir\\freeglut_static.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\src\\util\\xparsegeometry_repl.c",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/freeglut/src/util/xparsegeometry_repl.c"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/shapelib",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFREEGLUT_STATIC -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD -std:c++17 /FoCMakeFiles\\shape_lib.dir\\dbfopen.cpp.obj /FdCMakeFiles\\shape_lib.dir\\shape_lib.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\shapelib\\dbfopen.cpp",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/shapelib/dbfopen.cpp"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/shapelib",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFREEGLUT_STATIC -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD -std:c++17 /FoCMakeFiles\\shape_lib.dir\\safileio.cpp.obj /FdCMakeFiles\\shape_lib.dir\\shape_lib.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\shapelib\\safileio.cpp",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/shapelib/safileio.cpp"
+},
+{
+  "directory": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/3rd/shapelib",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFREEGLUT_STATIC -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd -IC:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\freeglut\\include /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD -std:c++17 /FoCMakeFiles\\shape_lib.dir\\shpopen.cpp.obj /FdCMakeFiles\\shape_lib.dir\\shape_lib.pdb /FS -c C:\\Users\\PaperDoll\\Desktop\\Spatial_Index\\code\\3rd\\shapelib\\shpopen.cpp",
+  "file": "C:/Users/PaperDoll/Desktop/Spatial_Index/code/3rd/shapelib/shpopen.cpp"
+}
+]

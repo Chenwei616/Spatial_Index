@@ -1,0 +1,113 @@
+Determining if files unistd.h exist failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_baad1 && [1/2] Building C object CMakeFiles\cmTC_baad1.dir\HAVE_UNISTD_H.c.obj
+FAILED: CMakeFiles/cmTC_baad1.dir/HAVE_UNISTD_H.c.obj 
+C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_baad1.dir\HAVE_UNISTD_H.c.obj /FdCMakeFiles\cmTC_baad1.dir\ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c
+C:\Users\PaperDoll\Desktop\Spatial_Index\code\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c(2): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <unistd.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/time.h exist failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_42c6a && [1/2] Building C object CMakeFiles\cmTC_42c6a.dir\HAVE_SYS_TIME_H.c.obj
+FAILED: CMakeFiles/cmTC_42c6a.dir/HAVE_SYS_TIME_H.c.obj 
+C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_42c6a.dir\HAVE_SYS_TIME_H.c.obj /FdCMakeFiles\cmTC_42c6a.dir\ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c
+C:\Users\PaperDoll\Desktop\Spatial_Index\code\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c(2): fatal error C1083: 无法打开包括文件: “sys/time.h”: No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <sys/time.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/param.h exist failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_1d983 && [1/2] Building C object CMakeFiles\cmTC_1d983.dir\HAVE_SYS_PARAM_H.c.obj
+FAILED: CMakeFiles/cmTC_1d983.dir/HAVE_SYS_PARAM_H.c.obj 
+C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_1d983.dir\HAVE_SYS_PARAM_H.c.obj /FdCMakeFiles\cmTC_1d983.dir\ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c
+C:\Users\PaperDoll\Desktop\Spatial_Index\code\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c(2): fatal error C1083: 无法打开包括文件: “sys/param.h”: No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <sys/param.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/ioctl.h exist failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_06f18 && [1/2] Building C object CMakeFiles\cmTC_06f18.dir\HAVE_SYS_IOCTL_H.c.obj
+FAILED: CMakeFiles/cmTC_06f18.dir/HAVE_SYS_IOCTL_H.c.obj 
+C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_06f18.dir\HAVE_SYS_IOCTL_H.c.obj /FdCMakeFiles\cmTC_06f18.dir\ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c
+C:\Users\PaperDoll\Desktop\Spatial_Index\code\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c(2): fatal error C1083: 无法打开包括文件: “sys/ioctl.h”: No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <sys/ioctl.h>
+
+
+int main(void){return 0;}
+
+Determining if files usbhid.h exist failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_9cb96 && [1/2] Building C object CMakeFiles\cmTC_9cb96.dir\HAVE_USBHID_H.c.obj
+FAILED: CMakeFiles/cmTC_9cb96.dir/HAVE_USBHID_H.c.obj 
+C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_9cb96.dir\HAVE_USBHID_H.c.obj /FdCMakeFiles\cmTC_9cb96.dir\ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_USBHID_H.c
+C:\Users\PaperDoll\Desktop\Spatial_Index\code\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_USBHID_H.c(2): fatal error C1083: 无法打开包括文件: “usbhid.h”: No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <usbhid.h>
+
+
+int main(void){return 0;}
+
+Determining if the function gettimeofday exists failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_e28b6 && [1/2] Building C object CMakeFiles\cmTC_e28b6.dir\CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_e28b6.exe
+FAILED: cmTC_e28b6.exe 
+cmd.exe /C "cd . && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_e28b6.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_e28b6.dir\CheckFunctionExists.c.obj  /out:cmTC_e28b6.exe /implib:cmTC_e28b6.lib /pdb:cmTC_e28b6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_e28b6.dir\CheckFunctionExists.c.obj /out:cmTC_e28b6.exe /implib:cmTC_e28b6.lib /pdb:cmTC_e28b6.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_e28b6.dir/intermediate.manifest CMakeFiles\cmTC_e28b6.dir/manifest.res" failed (exit code 1120) with the following output:
+CheckFunctionExists.c.obj : error LNK2019: 无法解析的外部符号 gettimeofday，函数 main 中引用了该符号
+cmTC_e28b6.exe : fatal error LNK1120: 1 个无法解析的外部命令
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function XParseGeometry exists failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_59fb8 && [1/2] Building C object CMakeFiles\cmTC_59fb8.dir\CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_59fb8.exe
+FAILED: cmTC_59fb8.exe 
+cmd.exe /C "cd . && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_59fb8.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_59fb8.dir\CheckFunctionExists.c.obj  /out:cmTC_59fb8.exe /implib:cmTC_59fb8.lib /pdb:cmTC_59fb8.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_59fb8.dir\CheckFunctionExists.c.obj /out:cmTC_59fb8.exe /implib:cmTC_59fb8.lib /pdb:cmTC_59fb8.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_59fb8.dir/intermediate.manifest CMakeFiles\cmTC_59fb8.dir/manifest.res" failed (exit code 1120) with the following output:
+CheckFunctionExists.c.obj : error LNK2019: 无法解析的外部符号 XParseGeometry，函数 main 中引用了该符号
+cmTC_59fb8.exe : fatal error LNK1120: 1 个无法解析的外部命令
+ninja: build stopped: subcommand failed.
+
+
+

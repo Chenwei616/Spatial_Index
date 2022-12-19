@@ -1,0 +1,1 @@
+C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\lib.exe /nologo /machine:x64 /machine:x64 /out:lib\freeglut_static.lib @CMakeFiles\freeglut_static.dir\objects1.rsp 
