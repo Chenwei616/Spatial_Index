@@ -1,0 +1,145 @@
+Determining if files unistd.h exist failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_e1097/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_e1097.dir\build.make CMakeFiles/cmTC_e1097.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1097.dir/HAVE_UNISTD_H.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_e1097.dir\HAVE_UNISTD_H.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_e1097.dir\HAVE_UNISTD_H.c.obj /FdCMakeFiles\cmTC_e1097.dir/ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c
+HAVE_UNISTD_H.c
+C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c(2): fatal error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渦nistd.h鈥? No such file or directory
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_e1097.dir\build.make:78: CMakeFiles/cmTC_e1097.dir/HAVE_UNISTD_H.c.obj] Error 2
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_e1097/fast] Error 2
+
+
+Source:
+/* */
+#include <unistd.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/time.h exist failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_1cbbe/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_1cbbe.dir\build.make CMakeFiles/cmTC_1cbbe.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1cbbe.dir/HAVE_SYS_TIME_H.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_1cbbe.dir\HAVE_SYS_TIME_H.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_1cbbe.dir\HAVE_SYS_TIME_H.c.obj /FdCMakeFiles\cmTC_1cbbe.dir/ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c
+HAVE_SYS_TIME_H.c
+C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c(2): fatal error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渟ys/time.h鈥? No such file or directory
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_1cbbe.dir\build.make:78: CMakeFiles/cmTC_1cbbe.dir/HAVE_SYS_TIME_H.c.obj] Error 2
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_1cbbe/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/time.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/param.h exist failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_71f6d/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_71f6d.dir\build.make CMakeFiles/cmTC_71f6d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71f6d.dir/HAVE_SYS_PARAM_H.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_71f6d.dir\HAVE_SYS_PARAM_H.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_71f6d.dir\HAVE_SYS_PARAM_H.c.obj /FdCMakeFiles\cmTC_71f6d.dir/ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c
+HAVE_SYS_PARAM_H.c
+C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c(2): fatal error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渟ys/param.h鈥? No such file or directory
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_71f6d.dir\build.make:78: CMakeFiles/cmTC_71f6d.dir/HAVE_SYS_PARAM_H.c.obj] Error 2
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_71f6d/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/param.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/ioctl.h exist failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_2d2a4/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_2d2a4.dir\build.make CMakeFiles/cmTC_2d2a4.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d2a4.dir/HAVE_SYS_IOCTL_H.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_2d2a4.dir\HAVE_SYS_IOCTL_H.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_2d2a4.dir\HAVE_SYS_IOCTL_H.c.obj /FdCMakeFiles\cmTC_2d2a4.dir/ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c
+HAVE_SYS_IOCTL_H.c
+C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c(2): fatal error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渟ys/ioctl.h鈥? No such file or directory
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_2d2a4.dir\build.make:78: CMakeFiles/cmTC_2d2a4.dir/HAVE_SYS_IOCTL_H.c.obj] Error 2
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_2d2a4/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/ioctl.h>
+
+
+int main(void){return 0;}
+
+Determining if files usbhid.h exist failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_c6578/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c6578.dir\build.make CMakeFiles/cmTC_c6578.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6578.dir/HAVE_USBHID_H.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_c6578.dir\HAVE_USBHID_H.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_c6578.dir\HAVE_USBHID_H.c.obj /FdCMakeFiles\cmTC_c6578.dir/ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_USBHID_H.c
+HAVE_USBHID_H.c
+C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_USBHID_H.c(2): fatal error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渦sbhid.h鈥? No such file or directory
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_c6578.dir\build.make:78: CMakeFiles/cmTC_c6578.dir/HAVE_USBHID_H.c.obj] Error 2
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_c6578/fast] Error 2
+
+
+Source:
+/* */
+#include <usbhid.h>
+
+
+int main(void){return 0;}
+
+Determining if the function gettimeofday exists failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_77239/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_77239.dir\build.make CMakeFiles/cmTC_77239.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77239.dir/CheckFunctionExists.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_77239.dir\CheckFunctionExists.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=gettimeofday /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_77239.dir\CheckFunctionExists.c.obj /FdCMakeFiles\cmTC_77239.dir/ /FS -c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CheckFunctionExists.c"
+CheckFunctionExists.c
+Linking C executable cmTC_77239.exe
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_77239.dir\link.txt --verbose=1
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_77239.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_77239.dir\objects1.rsp  /out:cmTC_77239.exe /implib:cmTC_77239.lib /pdb:C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp\cmTC_77239.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+LINK Pass 1: command "C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_77239.dir\objects1.rsp /out:cmTC_77239.exe /implib:cmTC_77239.lib /pdb:C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp\cmTC_77239.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_77239.dir/intermediate.manifest CMakeFiles\cmTC_77239.dir/manifest.res" failed (exit code 1120) with the following output:
+CheckFunctionExists.c.obj : error LNK2019: 无法解析的外部符号 gettimeofday，函数 main 中引用了该符号
+cmTC_77239.exe : fatal error LNK1120: 1 个无法解析的外部命令
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_77239.dir\build.make:100: cmTC_77239.exe] Error -1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_77239/fast] Error 2
+
+
+
+Determining if the function XParseGeometry exists failed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_392d7/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_392d7.dir\build.make CMakeFiles/cmTC_392d7.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_392d7.dir/CheckFunctionExists.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_392d7.dir\CheckFunctionExists.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=XParseGeometry /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_392d7.dir\CheckFunctionExists.c.obj /FdCMakeFiles\cmTC_392d7.dir/ /FS -c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CheckFunctionExists.c"
+CheckFunctionExists.c
+Linking C executable cmTC_392d7.exe
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_392d7.dir\link.txt --verbose=1
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_392d7.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_392d7.dir\objects1.rsp  /out:cmTC_392d7.exe /implib:cmTC_392d7.lib /pdb:C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp\cmTC_392d7.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+LINK Pass 1: command "C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_392d7.dir\objects1.rsp /out:cmTC_392d7.exe /implib:cmTC_392d7.lib /pdb:C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp\cmTC_392d7.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_392d7.dir/intermediate.manifest CMakeFiles\cmTC_392d7.dir/manifest.res" failed (exit code 1120) with the following output:
+CheckFunctionExists.c.obj : error LNK2019: 无法解析的外部符号 XParseGeometry，函数 main 中引用了该符号
+cmTC_392d7.exe : fatal error LNK1120: 1 个无法解析的外部命令
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_392d7.dir\build.make:100: cmTC_392d7.exe] Error -1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_392d7/fast] Error 2
+
+
+

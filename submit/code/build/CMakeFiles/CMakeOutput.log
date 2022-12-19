@@ -1,0 +1,181 @@
+The system is: Windows - 10.0.22000 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30133 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.29.30133.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/3.20.21032501-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30133 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.29.30133.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/3.20.21032501-MSVC_2/CompilerIdC/CMakeCCompilerId.exe"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_c24ad/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c24ad.dir\build.make CMakeFiles/cmTC_c24ad.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c24ad.dir/CMakeCXXCompilerABI.cpp.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_c24ad.dir\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_c24ad.dir\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\cmTC_c24ad.dir/ /FS -c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp"
+CMakeCXXCompilerABI.cpp
+?鈷? 鍖呭惈鏂囦欢:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCompilerABI.h
+Linking CXX executable cmTC_c24ad.exe
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c24ad.dir\link.txt --verbose=1
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_c24ad.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_c24ad.dir\objects1.rsp  /out:cmTC_c24ad.exe /implib:cmTC_c24ad.lib /pdb:C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp\cmTC_c24ad.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_3c0db/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_3c0db.dir\build.make CMakeFiles/cmTC_3c0db.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c0db.dir/CMakeCCompilerABI.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_3c0db.dir\CMakeCCompilerABI.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_3c0db.dir\CMakeCCompilerABI.c.obj /FdCMakeFiles\cmTC_3c0db.dir/ /FS -c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c"
+CMakeCCompilerABI.c
+?鈷? 鍖呭惈鏂囦欢:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCompilerABI.h
+Linking C executable cmTC_3c0db.exe
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3c0db.dir\link.txt --verbose=1
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_3c0db.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_3c0db.dir\objects1.rsp  /out:cmTC_3c0db.exe /implib:cmTC_3c0db.lib /pdb:C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp\cmTC_3c0db.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files sys/types.h exist passed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_b23ce/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_b23ce.dir\build.make CMakeFiles/cmTC_b23ce.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b23ce.dir/HAVE_SYS_TYPES_H.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_b23ce.dir\HAVE_SYS_TYPES_H.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_b23ce.dir\HAVE_SYS_TYPES_H.c.obj /FdCMakeFiles\cmTC_b23ce.dir/ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c
+HAVE_SYS_TYPES_H.c
+?鈷? 鍖呭惈鏂囦欢:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/types.h
+?鈷? 鍖呭惈鏂囦欢:   C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+?鈷? 鍖呭惈鏂囦欢:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+?鈷? 鍖呭惈鏂囦欢:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+?鈷? 鍖呭惈鏂囦欢:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+?鈷? 鍖呭惈鏂囦欢:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+Linking C executable cmTC_b23ce.exe
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b23ce.dir\link.txt --verbose=1
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_b23ce.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_b23ce.dir\objects1.rsp  /out:cmTC_b23ce.exe /implib:cmTC_b23ce.lib /pdb:C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp\cmTC_b23ce.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files stdbool.h exist passed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_fd36e/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_fd36e.dir\build.make CMakeFiles/cmTC_fd36e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd36e.dir/HAVE_STDBOOL_H.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_fd36e.dir\HAVE_STDBOOL_H.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_fd36e.dir\HAVE_STDBOOL_H.c.obj /FdCMakeFiles\cmTC_fd36e.dir/ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c
+HAVE_STDBOOL_H.c
+?鈷? 鍖呭惈鏂囦欢:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdbool.h
+Linking C executable cmTC_fd36e.exe
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_fd36e.dir\link.txt --verbose=1
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_fd36e.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_fd36e.dir\objects1.rsp  /out:cmTC_fd36e.exe /implib:cmTC_fd36e.lib /pdb:C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp\cmTC_fd36e.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files fcntl.h exist passed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_805b0/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_805b0.dir\build.make CMakeFiles/cmTC_805b0.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_805b0.dir/HAVE_FCNTL_H.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_805b0.dir\HAVE_FCNTL_H.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_805b0.dir\HAVE_FCNTL_H.c.obj /FdCMakeFiles\cmTC_805b0.dir/ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c
+HAVE_FCNTL_H.c
+?鈷? 鍖呭惈鏂囦欢:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\fcntl.h
+?鈷? 鍖呭惈鏂囦欢:   C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+?鈷? 鍖呭惈鏂囦欢:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+?鈷? 鍖呭惈鏂囦欢:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+?鈷? 鍖呭惈鏂囦欢:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+?鈷? 鍖呭惈鏂囦欢:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+Linking C executable cmTC_805b0.exe
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_805b0.dir\link.txt --verbose=1
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_805b0.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_805b0.dir\objects1.rsp  /out:cmTC_805b0.exe /implib:cmTC_805b0.lib /pdb:C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp\cmTC_805b0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files stdint.h exist passed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_d9784/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_d9784.dir\build.make CMakeFiles/cmTC_d9784.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9784.dir/HAVE_STDINT_H.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_d9784.dir\HAVE_STDINT_H.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_d9784.dir\HAVE_STDINT_H.c.obj /FdCMakeFiles\cmTC_d9784.dir/ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c
+HAVE_STDINT_H.c
+?鈷? 鍖呭惈鏂囦欢:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h
+?鈷? 鍖呭惈鏂囦欢:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+?鈷? 鍖呭惈鏂囦欢:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+?鈷? 鍖呭惈鏂囦欢:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+?鈷? 鍖呭惈鏂囦欢:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+Linking C executable cmTC_d9784.exe
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d9784.dir\link.txt --verbose=1
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_d9784.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_d9784.dir\objects1.rsp  /out:cmTC_d9784.exe /implib:cmTC_d9784.lib /pdb:C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp\cmTC_d9784.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe -f Makefile cmTC_1db20/fast && C:/Users/PaperDoll/.vscode/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_1db20.dir\build.make CMakeFiles/cmTC_1db20.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1db20.dir/HAVE_INTTYPES_H.c.obj
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_1db20.dir\HAVE_INTTYPES_H.c.obj.d --working-dir=C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_1db20.dir\HAVE_INTTYPES_H.c.obj /FdCMakeFiles\cmTC_1db20.dir/ /FS -c C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c
+HAVE_INTTYPES_H.c
+?鈷? 鍖呭惈鏂囦欢:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\inttypes.h
+?鈷? 鍖呭惈鏂囦欢:   C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+?鈷? 鍖呭惈鏂囦欢:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+?鈷? 鍖呭惈鏂囦欢:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+?鈷? 鍖呭惈鏂囦欢:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+?鈷? 鍖呭惈鏂囦欢:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+?鈷? 鍖呭惈鏂囦欢:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h
+Linking C executable cmTC_1db20.exe
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1db20.dir\link.txt --verbose=1
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_1db20.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_1db20.dir\objects1.rsp  /out:cmTC_1db20.exe /implib:cmTC_1db20.lib /pdb:C:\Users\PaperDoll\Desktop\Spatial_Index\code\build\CMakeFiles\CMakeTmp\cmTC_1db20.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/PaperDoll/Desktop/Spatial_Index/code/build/CMakeFiles/CMakeTmp'
+
+
+
