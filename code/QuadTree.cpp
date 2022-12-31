@@ -135,7 +135,7 @@ namespace hw6
     {
         if (features.empty())
             return false;
-
+        features[1].getGeom()->getEnvelope().print();
         // Task construction
         // TODO
         bbox = features[0].getEnvelope();
