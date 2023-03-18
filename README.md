@@ -104,8 +104,6 @@ static void hw6::RTree<M>::analyse(); // For comparison with quadtrees, selectin
    The key to calculate the distance from Point to Polygon is to determine whether the Point is inside the Polygon, which can be judged by the ray method, refer to https://www.cnblogs.com/luxiaoxun/p/3722358.html , if the Point is inside the Polygon, the distance is 0, otherwise, calculate the Point and Polygon boundary distance. Polygon definition is the same as PostGIS, the first point and the last point of the outer ring is the same point.
 
 
-   ! [1](https://github.com/Chenweigenius/Spatial_Index/raw/main/src/1.gif)
-
 
 2. Based on the Envelope class provided
 
@@ -121,7 +119,6 @@ static void hw6::RTree<M>::analyse(); // For comparison with quadtrees, selectin
 
       Quadtree creation input a set of geometric features, split the node into four child nodes, each feature added to the enclosing box overlapping child nodes (i.e., a feature may be in more than one node), delete the geometric feature record of the current node (i.e., all features are stored in the leaf node only), if the number of geometric features of child nodes is greater than capacity, recursively generate child nodes.
 
-      ! [3](https://github.com/Chenweigenius/Spatial_Index/raw/main/src/3.jpg)
 
    2. Implement the rangeQuery function to complete the region query
 
@@ -129,8 +126,6 @@ static void hw6::RTree<M>::analyse(); // For comparison with quadtrees, selectin
 
       By selecting the query area with the mouse, the area query is verified on the site and road data.
 
-
-      ! [4](https://github.com/Chenweigenius/Spatial_Index/raw/main/src/4.jpg)
 
 
    3. Implement the NNQuery and pointInLeafNode functions to complete the nearest neighbor geometric feature query
@@ -141,8 +136,6 @@ static void hw6::RTree<M>::analyse(); // For comparison with quadtrees, selectin
 
       The nearest geometric feature (site and road) is selected by mouse movement to verify the nearest geometric feature query.
 
-
-      ! [5](https://github.com/Chenweigenius/Spatial_Index/raw/main/src/5.jpg)
 
 
 4. Distance-based Spatial Join (Spatial Join)
